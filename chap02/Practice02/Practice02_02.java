@@ -1,14 +1,14 @@
-package Practice02;
+package chap02.Practice02;
 
 import java.util.Scanner;
 
 public class Practice02_02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("³ªÀÌ, Ã¼Áß, ½ÅÀåÀ» ºóÄ­À¸·Î ºÐ¸®ÇÏ¿© ¼ø¼­´ë·Î ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.println("´ç½ÅÀÇ ³ªÀÌ´Â "+ sc.nextInt() + "»ìÀÔ´Ï´Ù.");
-		System.out.println("´ç½ÅÀÇ Ã¼ÁßÀº "+ sc.nextDouble() + "kgÀÔ´Ï´Ù.");
-		System.out.println("´ç½ÅÀÇ ½ÅÀåÀº "+ sc.nextDouble() + "cmÀÔ´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½, Ã¼ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä­ï¿½ï¿½ï¿½ï¿½ ï¿½Ð¸ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ "+ sc.nextInt() + "ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼ï¿½ï¿½ï¿½ï¿½ "+ sc.nextDouble() + "kgï¿½Ô´Ï´ï¿½.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "+ sc.nextDouble() + "cmï¿½Ô´Ï´ï¿½.");
 		sc.close();
 	}
 }

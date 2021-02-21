@@ -1,28 +1,28 @@
-package Problem02;
+package chap02.Problem02;
 
 import java.util.Scanner;
 
 public class Rectangle {
 	public static void main(String[] args) {
-		int x1, y1; 	//Á¡1ÀÇ ÁÂÇ¥
-		int x2, y2;		//Á¡2ÀÇ ÁÂÇ¥
+		int x1, y1; 	//ï¿½ï¿½1ï¿½ï¿½ ï¿½ï¿½Ç¥
+		int x2, y2;		//ï¿½ï¿½2ï¿½ï¿½ ï¿½ï¿½Ç¥
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Á¡ (x1,y1)ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ï¿½ï¿½ (x1,y1)ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 		System.out.print("x1: ");
 		x1 = sc.nextInt();
 		System.out.print("y1: ");
 		y1 = sc.nextInt();
-		System.out.println("Á¡ (x2,y2)ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ï¿½ï¿½ (x2,y2)ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 		System.out.print("x2: ");
 		x2 = sc.nextInt();
 		System.out.print("y2: ");
 		y2 = sc.nextInt();
 
 		if ((x1<50 && x2<50) || (x1>100 && x2>100) || (y1<50 && y2<50) || (y1>100 && y2>100))
-			System.out.println("»ç°¢ÇüÀÌ ¾È °ãÄ¨´Ï´Ù.");
+			System.out.println("ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½Ä¨ï¿½Ï´ï¿½.");
 		else
-			System.out.println("»ç°¢ÇüÀÌ °ãÄ¨´Ï´Ù.");
+			System.out.println("ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¨ï¿½Ï´ï¿½.");
 		sc.close();
 	}
 }

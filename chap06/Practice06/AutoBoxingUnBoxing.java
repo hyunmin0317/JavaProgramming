@@ -1,5 +1,5 @@
-package Practice06;
-// ¿¹Á¦ 6-3 : ¹Ú½Ì ¾ð¹Ú½ÌÀÇ ¿¹
+package chap06.Practice06;
+// ï¿½ï¿½ï¿½ï¿½ 6-3 : ï¿½Ú½ï¿½ ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½
 public class AutoBoxingUnBoxing {
 	public static void main(String[] args) {
 		int i = 10;

@@ -1,5 +1,5 @@
-package Practice05;
-// ¿¹Á¦ 5-3 : instanceof¸¦ ÀÌ¿ëÇÑ °´Ã¼ ±¸º°
+package chap05.Practice05;
+// ï¿½ï¿½ï¿½ï¿½ 5-3 : instanceofï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
 class Person1 {}
 class Student1 extends Person1 {}
 class Researcher extends Person1 {}
@@ -11,20 +11,20 @@ public class InstanceofExample {
 		Person1 kim = new Professor();
 		Person1 lee = new Researcher();
 		if (jee instanceof Student1) 
-			System.out.println("jee´Â Student Å¸ÀÔ");
+			System.out.println("jeeï¿½ï¿½ Student Å¸ï¿½ï¿½");
 		if (jee instanceof Researcher) 
-			System.out.println("jee´Â Researcher Å¸ÀÔ");
+			System.out.println("jeeï¿½ï¿½ Researcher Å¸ï¿½ï¿½");
 		if (kim instanceof Student1)
-			System.out.println("kimÀº Student Å¸ÀÔ");
+			System.out.println("kimï¿½ï¿½ Student Å¸ï¿½ï¿½");
 		if (kim instanceof Professor) 
-			System.out.println("kimÀº Professor Å¸ÀÔ");
+			System.out.println("kimï¿½ï¿½ Professor Å¸ï¿½ï¿½");
 		if (kim instanceof Researcher) 
-			System.out.println("kimÀº Researcher Å¸ÀÔ");
+			System.out.println("kimï¿½ï¿½ Researcher Å¸ï¿½ï¿½");
 		if (kim instanceof Person1)
-			System.out.println("kimÀº Person Å¸ÀÔ");
+			System.out.println("kimï¿½ï¿½ Person Å¸ï¿½ï¿½");
 		if (lee instanceof Professor)
-			System.out.println("lee´Â Professor Å¸ÀÔ");
+			System.out.println("leeï¿½ï¿½ Professor Å¸ï¿½ï¿½");
 		if ("java" instanceof String)
-			System.out.println("\"java\"´Â String Å¸ÀÔ");
+			System.out.println("\"java\"ï¿½ï¿½ String Å¸ï¿½ï¿½");
 	}
 }

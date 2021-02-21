@@ -1,26 +1,26 @@
-package Practice07;
+package chap07.Practice07;
 import java.util.*;
-// ¿¹Á¦ 7-6 : HashMapÀ» ÀÌ¿ëÇÏ¿© ÀÚ¹Ù °ú¸ñÀÇ Á¡¼ö¸¦ ±â·Ï °ü¸®ÇÏ´Â ÄÚµå ÀÛ¼º
+// ï¿½ï¿½ï¿½ï¿½ 7-6 : HashMapï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï¿ï¿½ ï¿½Ú¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Úµï¿½ ï¿½Û¼ï¿½
 public class HashMapScoreEx {
 	public static void main(String[] args) {
-		// »ç¿ëÀÚ ÀÌ¸§°ú Á¡¼ö¸¦ ±â·ÏÇÏ´Â HashMap ÄÃ·º¼Ç »ý¼º
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ HashMap ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		HashMap<String, Integer> javaScore = new HashMap<String, Integer>();	
 		
-		// 5 °³ÀÇ Á¡¼ö ÀúÀå
-		javaScore.put("ÇÑÈ«Áø", 97); 
-		javaScore.put("È²±âÅÂ", 34); 
-		javaScore.put("ÀÌ¿µÈñ", 98);
-		javaScore.put("Á¤¿ø¼®", 70);		
-		javaScore.put("ÇÑ¿ø¼±", 99);
+		// 5 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		javaScore.put("ï¿½ï¿½È«ï¿½ï¿½", 97); 
+		javaScore.put("È²ï¿½ï¿½ï¿½ï¿½", 34); 
+		javaScore.put("ï¿½Ì¿ï¿½ï¿½ï¿½", 98);
+		javaScore.put("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 70);		
+		javaScore.put("ï¿½Ñ¿ï¿½ï¿½ï¿½", 99);
 		
-		System.out.println("HashMapÀÇ ¿ä¼Ò °³¼ö :"+javaScore.size());
+		System.out.println("HashMapï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ :"+javaScore.size());
 		
-		// ¸ðµç »ç¶÷ÀÇ Á¡¼ö Ãâ·Â. 
-		// javaScore¿¡ µé¾î ÀÖ´Â ¸ðµç (key, value) ½Ö Ãâ·Â
-		// key ¹®ÀÚ¿­À» °¡Áø ÁýÇÕ Set ÄÃ·º¼Ç ¸®ÅÏ
+		// ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½. 
+		// javaScoreï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ (key, value) ï¿½ï¿½ ï¿½ï¿½ï¿½
+		// key ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Set ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		Set<String> keys = javaScore.keySet();
 		
-		// key ¹®ÀÚ¿­À» ¼ø¼­´ë·Î Á¢±ÙÇÒ ¼ö ÀÖ´Â Iterator ¸®ÅÏ
+		// key ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ Iterator ï¿½ï¿½ï¿½ï¿½
 		Iterator<String> it = keys.iterator();
 		while(it.hasNext()) {
 			String name = it.next();

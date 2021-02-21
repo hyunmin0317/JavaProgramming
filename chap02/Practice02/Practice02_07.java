@@ -1,4 +1,4 @@
-package Practice02;
+package chap02.Practice02;
 
 import java.util.Scanner;
 
@@ -6,10 +6,10 @@ public class Practice02_07 {
 	public static void main(String[] args) {
 		int score;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("а║╪Ж╦╕ ют╥бго╫ц©ю: ");
+		System.out.print("О©╫О©╫О©╫О©╫О©╫О©╫ О©╫т╥О©╫О©╫о╫ц©О©╫: ");
 		score = sc.nextInt();
 		if (score >= 80)
-			System.out.println("цЮгогу╢о╢ы! гу╟щют╢о╢ы.");
+			System.out.println("О©╫О©╫О©╫О©╫О©╫у╢о╢О©╫! О©╫у╟О©╫О©╫т╢о╢О©╫.");
 		sc.close();
 	}
 }

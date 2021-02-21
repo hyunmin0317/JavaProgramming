@@ -1,4 +1,4 @@
-package Test;
+package Exam.Test;
 import java.util.Scanner;
 
 public class GraphicManager {
@@ -12,7 +12,7 @@ public class GraphicManager {
 			option = sc.nextInt();
 			switch(option) {
 			case 1:
-				System.out.print("µµÇüÁ¾·ù Line(1), Rect(2), Circle(3)>> ");
+				System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Line(1), Rect(2), Circle(3)>> ");
 				graphic = sc.nextInt();
 				if (graphic == 1)
 					A.add(new Line());
@@ -21,10 +21,10 @@ public class GraphicManager {
 				else if(graphic == 3)
 					A.add(new Circle());
 				else
-					System.out.println("¼ýÀÚ¸¦ Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.");
+					System.out.println("ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.");
 				break;
 			case 2:
-				System.out.print("»èÁ¦ÇÒ µµÇüÀÇ À§Ä¡>>");
+				System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡>>");
                 delete = sc.nextInt();
 				A.delete(delete);
 				break;
@@ -32,11 +32,11 @@ public class GraphicManager {
 				A.showAll();
 				break;
 			case 4:
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 				sc.close();
 				return;
 			default:
-				System.out.println("¼ýÀÚ¸¦ Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.");
 				}
 			}
 		}

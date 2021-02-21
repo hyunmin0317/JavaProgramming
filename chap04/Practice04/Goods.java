@@ -1,5 +1,5 @@
-package Practice04;
-// ¿¹Á¦ 4-1 : »óÇ° ÇÏ³ª¸¦ Ç¥ÇöÇÏ´Â Å¬·¡½º Goods ¸¸µé±â
+package chap04.Practice04;
+// ï¿½ï¿½ï¿½ï¿½ 4-1 : ï¿½ï¿½Ç° ï¿½Ï³ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ï´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ Goods ï¿½ï¿½ï¿½ï¿½ï¿½
 public class Goods {
 	String name;
 	int price;
@@ -11,9 +11,9 @@ public class Goods {
 		camera.price = 400000;
 		camera.numberOfStock = 30;
 		camera.sold = 50;
-		System.out.println("»óÇ° ÀÌ¸§: "+camera.name);
-		System.out.println("»óÇ° °¡°Ý: "+camera.price);
-		System.out.println("Àç°í ¼ö·®: "+camera.numberOfStock);
-		System.out.println("ÆÈ¸° ¼ö·®: "+camera.sold);
+		System.out.println("ï¿½ï¿½Ç° ï¿½Ì¸ï¿½: "+camera.name);
+		System.out.println("ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½: "+camera.price);
+		System.out.println("ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: "+camera.numberOfStock);
+		System.out.println("ï¿½È¸ï¿½ ï¿½ï¿½ï¿½ï¿½: "+camera.sold);
 		}
 }

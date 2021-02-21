@@ -1,28 +1,28 @@
-package MidtermExam;
+package Exam.MidtermExam;
 import java.util.Scanner;
-// Áß°£°í»ç 1¹ø ¹®Á¦
+// ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class Grade {
 	public static void main(String[] args) {
 		String grade;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÇÐÁ¡ ÀÔ·Â: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½: ");
 		grade = sc.next();
 		
 		switch(grade) {
 		case "A":
 		case "B":
 		case "C":
-			System.out.println("Âü ÀßÇÏ¿´½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			break;
 		case "D":
 		case "E":
-			System.out.println("Á» ´õ ³ë·ÂÇÏ¼¼¿ä.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 			break;
 		case "F":
-			System.out.println("´ÙÀ½ ÇÐ±â¿¡ ´Ù½Ã ¼ö°­ÇÏ¼¼¿ä.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±â¿¡ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 			break;
 		default:
-			System.out.println("ÇÐÁ¡À» Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			break;
 		}
 		sc.close();

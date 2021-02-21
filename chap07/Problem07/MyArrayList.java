@@ -1,6 +1,6 @@
-package Problem07;
+package chap07.Problem07;
 import java.util.*;
-// ½Ç½À 07-03
+// ï¿½Ç½ï¿½ 07-03
 class Student {
     String name;
     String department;
@@ -19,17 +19,17 @@ public class MyArrayList {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Student> st = new ArrayList<Student>();
-        System.out.println("ÇÐ»ý Á¤º¸¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-        for(int i=0;i<5;i++) //5¹ø ¹Ýº¹
+        System.out.println("ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
+        for(int i=0;i<5;i++) //5ï¿½ï¿½ ï¿½Ýºï¿½
         {
-        	System.out.println("\nÇÐ»ý"+(i+1));
-            System.out.print("ÀÌ¸§ ÀÔ·Â: ");
+        	System.out.println("\nï¿½Ð»ï¿½"+(i+1));
+            System.out.print("ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½: ");
             String name=sc.nextLine();
-            System.out.print("ÇÐ°ú ÀÔ·Â: ");
+            System.out.print("ï¿½Ð°ï¿½ ï¿½Ô·ï¿½: ");
             String department=sc.nextLine();
-            System.out.print("ÇÐ¹ø ÀÔ·Â: ");
+            System.out.print("ï¿½Ð¹ï¿½ ï¿½Ô·ï¿½: ");
             String classnum=sc.nextLine();
-            System.out.print("ÇÐÁ¡Æò±Õ ÀÔ·Â: ");
+            System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½: ");
             double averscore=sc.nextDouble();
             Student tmp = new Student(name,department,classnum,averscore);
             st.add(tmp);
@@ -38,11 +38,11 @@ public class MyArrayList {
         sc.close();
         for(int i=0;i<st.size();i++){
             Student res = st.get(i);
-            System.out.println("\nÇÐ»ý"+(i+1));
-            System.out.println("ÀÌ¸§: "+res.name);
-            System.out.println("ÇÐ°ú: "+res.department);
-            System.out.println("ÇÐ¹ø: "+res.classnum);
-            System.out.println("ÇÐÁ¡Æò±Õ: "+res.averscore);
+            System.out.println("\nï¿½Ð»ï¿½"+(i+1));
+            System.out.println("ï¿½Ì¸ï¿½: "+res.name);
+            System.out.println("ï¿½Ð°ï¿½: "+res.department);
+            System.out.println("ï¿½Ð¹ï¿½: "+res.classnum);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: "+res.averscore);
         }
     }
 }

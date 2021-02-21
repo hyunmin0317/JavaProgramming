@@ -1,7 +1,7 @@
-package Practice07;
+package chap07.Practice07;
 import java.util.*;
-// ¿¹Á¦ 7-7 HashMapÀ» ÀÌ¿ëÇÑ ÇÐ»ý Á¤º¸ ÀúÀå
-class Student { // ÇÐ»ýÀ» Ç¥ÇöÇÏ´Â Å¬·¡½º
+// ï¿½ï¿½ï¿½ï¿½ 7-7 HashMapï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+class Student { // ï¿½Ð»ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ï´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
 	int id;
 	String tel;
 	public Student(int id, String tel) {
@@ -10,20 +10,20 @@ class Student { // ÇÐ»ýÀ» Ç¥ÇöÇÏ´Â Å¬·¡½º
 }
 public class HashMapStudentEx {
 	public static void main(String[] args) {
-		// ÇÐ»ý ÀÌ¸§°ú Student °´Ã¼¸¦ ½ÖÀ¸·Î ÀúÀåÇÏ´Â HashMap ÄÃ·º¼Ç »ý¼º
+		// ï¿½Ð»ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ Student ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ HashMap ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		HashMap<String, Student> map = new HashMap<String, Student>();		
-		// 3 ¸íÀÇ ÇÐ»ý ÀúÀå
-		map.put("È²±âÅÂ", new Student(1, "010-111-1111")); 
-		map.put("ÇÑ¿ø¼±", new Student(2, "010-222-2222"));
-		map.put("ÀÌ¿µÈñ", new Student(3, "010-333-3333"));		
-		System.out.println("HashMapÀÇ ¿ä¼Ò °³¼ö :" + map.size());
-		// ¸ðµç ÇÐ»ý Ãâ·Â. map¿¡ µé¾î ÀÖ´Â ¸ðµç (key, value) ½Ö Ãâ·Â
-		// key ¹®ÀÚ¿­À» °¡Áø ÁýÇÕ Set ÄÃ·º¼Ç ¸®ÅÏ
+		// 3 ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½
+		map.put("È²ï¿½ï¿½ï¿½ï¿½", new Student(1, "010-111-1111")); 
+		map.put("ï¿½Ñ¿ï¿½ï¿½ï¿½", new Student(2, "010-222-2222"));
+		map.put("ï¿½Ì¿ï¿½ï¿½ï¿½", new Student(3, "010-333-3333"));		
+		System.out.println("HashMapï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ :" + map.size());
+		// ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½. mapï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ (key, value) ï¿½ï¿½ ï¿½ï¿½ï¿½
+		// key ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Set ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		Set<String> names = map.keySet();
-		 // key ¹®ÀÚ¿­À» ¼ø¼­´ë·Î Á¢±ÙÇÒ ¼ö ÀÖ´Â Iterator ¸®ÅÏ
+		 // key ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ Iterator ï¿½ï¿½ï¿½ï¿½
  		Iterator<String> it = names.iterator();
 		while(it.hasNext()) {
-			String name = it.next(); // ´ÙÀ½ Å°. ÇÐ»ý ÀÌ¸§
+			String name = it.next(); // ï¿½ï¿½ï¿½ï¿½ Å°. ï¿½Ð»ï¿½ ï¿½Ì¸ï¿½
 			Student student = map.get(name);
 			System.out.println(name + " : " + student.id + " " + student.tel);
 		}		

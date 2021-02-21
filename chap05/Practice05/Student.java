@@ -1,5 +1,5 @@
-package Practice05;
-// ¿¹Á¦ 5-2 : »ó¼Ó °ü°è¿¡ ÀÖ´Â Å¬·¡½º °£ ¸â¹ö Á¢±Ù
+package chap05.Practice05;
+// ï¿½ï¿½ï¿½ï¿½ 5-2 : ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½è¿¡ ï¿½Ö´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 class Person {
 	int age;
 	public String name;
@@ -15,15 +15,15 @@ class Person {
 public class Student extends Person{
 	void set() {
 		age = 22;
-		name = "ÃÖÇö¹Î";
+		name = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 		height = 183;
 		setWeight(77);
 	}
 	void showStudent() {
-		System.out.println("³ªÀÌ: "+age);
-		System.out.println("ÀÌ¸§: "+name);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½: "+age);
+		System.out.println("ï¿½Ì¸ï¿½: "+name);
 		System.out.println("Å°: "+height);
-		System.out.println("¸ö¹«°Ô: "+showWeight());
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: "+showWeight());
 	}
 	public static void main(String[] args) {
 		Student s = new Student();

@@ -1,4 +1,4 @@
-package Test;
+package Exam.Test;
 
 public class Line implements DObject {
 	public void draw() {

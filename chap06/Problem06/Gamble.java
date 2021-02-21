@@ -1,28 +1,28 @@
-package Problem06;
+package chap06.Problem06;
 import java.util.Scanner;
-// ½Ç½À 06-02
+// ï¿½Ç½ï¿½ 06-02
 public class Gamble {
     public static void main(String[] args) {
-    	int i = 0;	// ½ÃÇà È½¼ö¸¦ ³ªÅ¸³»¸ç °ÔÀÓÀÇ ÅÏÀ» ³ªÅ¸³»±â À§ÇØ ÇÊ¿äÇÔ
-    	int num1, num2, num3;	// °·ºí¸µ °ÔÀÓ 3°³ÀÇ ¼ýÀÚ
+    	int i = 0;	// ï¿½ï¿½ï¿½ï¿½ È½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½
+    	int num1, num2, num3;	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         Scanner sc = new Scanner(System.in);
-        System.out.println("°·ºí¸µ °ÔÀÓ");
-        System.out.print("1p ÀÔ·Â: ");
-        String p1 = sc.nextLine();	// 1pÀÇ ÀÌ¸§ ÀÔ·Â
-        System.out.print("2p ÀÔ·Â: ");
-        String p2 = sc.nextLine();	// 2pÀÇ ÀÌ¸§ ÀÔ·Â
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+        System.out.print("1p ï¿½Ô·ï¿½: ");
+        String p1 = sc.nextLine();	// 1pï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½
+        System.out.print("2p ï¿½Ô·ï¿½: ");
+        String p2 = sc.nextLine();	// 2pï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½
         while(true){
-            if(i%2 == 0)	// ½ÃÇà È½¼ö°¡ Â¦¼öÀÌ¸é p1ÀÇ Â÷·Ê
-                System.out.println("p1: "+p1+" Â÷·Ê");
-            else	// ½ÃÇà È½¼ö°¡ È¦¼öÀÌ¸é p2ÀÇ Â÷·Ê
-                System.out.println("p2: "+p2+" Â÷·Ê");
-            System.out.print("<Enter> Å° ÀÔ·Â");
-            if(sc.nextLine().equals("")) {	// enter¸¦ ÀÔ·Â ½Ã
-                num1 = (int)Math.round(Math.random()*3); // 0ºÎÅÍ 3±îÁöÀÇ ÀÓÀÇÀÇ ¼ö num1 »ý¼º
-                num2 = (int)Math.round(Math.random()*3); // 0ºÎÅÍ 3±îÁöÀÇ ÀÓÀÇÀÇ ¼ö num2 »ý¼º
-                num3 = (int)Math.round(Math.random()*3); // 0ºÎÅÍ 3±îÁöÀÇ ÀÓÀÇÀÇ ¼ö num3 »ý¼º
+            if(i%2 == 0)	// ï¿½ï¿½ï¿½ï¿½ È½ï¿½ï¿½ï¿½ï¿½ Â¦ï¿½ï¿½ï¿½Ì¸ï¿½ p1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+                System.out.println("p1: "+p1+" ï¿½ï¿½ï¿½ï¿½");
+            else	// ï¿½ï¿½ï¿½ï¿½ È½ï¿½ï¿½ï¿½ï¿½ È¦ï¿½ï¿½ï¿½Ì¸ï¿½ p2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+                System.out.println("p2: "+p2+" ï¿½ï¿½ï¿½ï¿½");
+            System.out.print("<Enter> Å° ï¿½Ô·ï¿½");
+            if(sc.nextLine().equals("")) {	// enterï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½ï¿½
+                num1 = (int)Math.round(Math.random()*3); // 0ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ num1 ï¿½ï¿½ï¿½ï¿½
+                num2 = (int)Math.round(Math.random()*3); // 0ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ num2 ï¿½ï¿½ï¿½ï¿½
+                num3 = (int)Math.round(Math.random()*3); // 0ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ num3 ï¿½ï¿½ï¿½ï¿½
                 System.out.println(num1+" "+num2+" "+num3);
-                if(num1 == num2 && num2 == num3) {	// 3°³ÀÇ ¼ýÀÚ°¡ ¸ðµÎ °°À»¶§
+                if(num1 == num2 && num2 == num3) {	// 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                     if(i%2 == 0)
                         System.out.println("p1: "+p1+" Win");
                     else

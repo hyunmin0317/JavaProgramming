@@ -1,4 +1,4 @@
-package Problem03;
+package chap03.Problem03;
 
 public class ThreeSixNine {
 	public static void main(String[] args) {
@@ -9,9 +9,9 @@ public class ThreeSixNine {
 			if (i/10==3 || i/10==6 || i/10==9)
 				count++;
 			if (count == 1)
-				System.out.println(i+" ¹Ú¼ö ÇÑ¹ø");
+				System.out.println(i+" ï¿½Ú¼ï¿½ ï¿½Ñ¹ï¿½");
 			if (count == 2)
-				System.out.println(i+" ¹Ú¼ö µÎ¹ø");
+				System.out.println(i+" ï¿½Ú¼ï¿½ ï¿½Î¹ï¿½");
 		}
 	}
 }

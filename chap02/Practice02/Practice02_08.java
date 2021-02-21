@@ -1,4 +1,4 @@
-package Practice02;
+package chap02.Practice02;
 
 import java.util.Scanner;
 
@@ -6,13 +6,13 @@ public class Practice02_08 {
 	public static void main(String[] args) {
 		int num;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½: ");
 		num = sc.nextInt();
 		
 		if (num % 3 == 0)
-			System.out.println("3ÀÇ ¹è¼öÀÔ´Ï´Ù.");
+			System.out.println("3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 		else
-			System.out.println("3ÀÇ ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Õ´Ï´ï¿½.");
 		sc.close();
 	}
 }

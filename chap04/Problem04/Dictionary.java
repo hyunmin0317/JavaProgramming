@@ -1,13 +1,13 @@
-package Problem04;
-//½Ç½À04-05
+package chap04.Problem04;
+//ï¿½Ç½ï¿½04-05
 public class Dictionary {
-	private static String[] kor = {"»ç¶û", "¾Æ±â", "µ·", "¹Ì·¡", "Èñ¸Á"};
+	private static String[] kor = {"ï¿½ï¿½ï¿½", "ï¿½Æ±ï¿½", "ï¿½ï¿½", "ï¿½Ì·ï¿½", "ï¿½ï¿½ï¿½"};
 	private static String[] eng = {"love", "baby", "money", "future", "hope"};
-	public static String kor2Eng(String word){	//°Ë»öÇÏ´Â ´Ü¾îÀÇ ¿µ´Ü¾î¸¦ Ãâ·ÂÇÏ´Â ¸Þ¼Òµå
+	public static String kor2Eng(String word){	//ï¿½Ë»ï¿½ï¿½Ï´ï¿½ ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ü¾î¸¦ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
 		int i;
 		for (i = 0; i < kor.length; i++)
-			if (word.equals(kor[i]))	//°Ë»öÇÏ´Â ´Ü¾î°¡ kor¿¡ ÀÖÀ»¶§ ±×¿¡ ÇØ´çÇÏ´Â ¿µ´Ü¾î ¹ÝÈ¯
+			if (word.equals(kor[i]))	//ï¿½Ë»ï¿½ï¿½Ï´ï¿½ ï¿½Ü¾î°¡ korï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¿ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ü¾ï¿½ ï¿½ï¿½È¯
 				return eng[i];
-		return "ÀúÀÇ  »çÀü¿¡ ¾ø½À´Ï´Ù.";
+		return "ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.";
 	}
 }

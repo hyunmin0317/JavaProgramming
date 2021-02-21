@@ -1,5 +1,5 @@
-package MidtermExam;
-// Áß°£°í»ç 4¹ø ¹®Á¦
+package Exam.MidtermExam;
+// ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ 4ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 class CurrencyConverter {
 	private static double rate;
 	static void setRate(double r) {
@@ -16,7 +16,7 @@ class CurrencyConverter {
 public class StaticMember {
 	public static void main(String[] args) {
 		CurrencyConverter.setRate(1121);
-		System.out.println("¹é¸¸¿øÀº "+CurrencyConverter.toDollar(1000000)+"´Þ·¯ÀÔ´Ï´Ù.");
-		System.out.println("¹é´Þ·¯´Â "+CurrencyConverter.toKWR(100)+"¿øÀÔ´Ï´Ù.");
+		System.out.println("ï¿½é¸¸ï¿½ï¿½ï¿½ï¿½ "+CurrencyConverter.toDollar(1000000)+"ï¿½Þ·ï¿½ï¿½Ô´Ï´ï¿½.");
+		System.out.println("ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ "+CurrencyConverter.toKWR(100)+"ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 	}
 }

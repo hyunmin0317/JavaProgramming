@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 import java.util.*;
 
 public class ArrayListEx {
@@ -7,7 +7,7 @@ public class ArrayListEx {
 		ArrayList <String> a = new ArrayList <String>();
 		Scanner sc = new Scanner(System.in);
 		for(i=0; i<4; i++) {
-			System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä >> ");
+			System.out.print("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ >> ");
 			a.add(sc.next());
 		}
 		for(i=0; i<a.size(); i++)
@@ -15,7 +15,7 @@ public class ArrayListEx {
 		for(i=1; i<a.size(); i++)
 			if(a.get(l).length() > a.get(i).length())
 				l = i;
-		System.out.println("\n°¡Àå ÂªÀº ÀÌ¸§: "+ a.get(l));
+		System.out.println("\nï¿½ï¿½ï¿½ï¿½ Âªï¿½ï¿½ ï¿½Ì¸ï¿½: "+ a.get(l));
 		sc.close();
 	}
 }

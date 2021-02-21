@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 import java.util.Scanner;
 
 public class ArrayLength {
@@ -10,7 +10,7 @@ public class ArrayLength {
 			intArray[i] = sc.nextInt();
 		for (int i = 0; i<intArray.length; i++) 
 			sum += intArray[i];
-		System.out.print("¹è¿­ÀÇ ¿ø¼Ò Æò±ÕÀº " + sum/intArray.length+"ÀÔ´Ï´Ù.");
+		System.out.print("ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ " + sum/intArray.length+"ï¿½Ô´Ï´ï¿½.");
 		sc.close();
 	}
 }

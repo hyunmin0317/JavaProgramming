@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 import java.util.Scanner;
 
 public class BreakExample {
@@ -10,7 +10,7 @@ public class BreakExample {
 				break;
 			num++;
 		}
-		System.out.println("ÀÔ·ÂµÈ ¼ýÀÚÀÇ °³¼ö´Â "+ num +"°³ÀÌ´Ù.");
+		System.out.println("ï¿½Ô·Âµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "+ num +"ï¿½ï¿½ï¿½Ì´ï¿½.");
 		sc.close();
 	}
 }

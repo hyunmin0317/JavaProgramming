@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -13,7 +13,7 @@ public class Person {
 			System.out.println(name+":");
 			n1 = (int)Math.round(Math.random()*2);
 			n2 = (int)Math.round(Math.random()*2);
-			System.out.println("³­¼ö ¹ß»ý °á°ú: "+n1+", "+n2+"\n");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ ï¿½ï¿½ï¿½: "+n1+", "+n2+"\n");
 			if(n1 == n2)
 				return true;
 			else

@@ -1,10 +1,10 @@
-package Problem04;
-//½Ç½À04-04
+package chap04.Problem04;
+//ï¿½Ç½ï¿½04-04
 public class Phone {
 	String name;
 	String tel;
 	
-	public Phone(String name, String tel) { //»ý¼ºÀÚ ÁöÁ¤
+	public Phone(String name, String tel) { //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		this.name = name;
 		this.tel = tel;
 	}

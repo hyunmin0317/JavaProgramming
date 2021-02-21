@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 
 public class ForSample {
 	public static void main(String[] args) {

@@ -1,5 +1,5 @@
-package Practice05;
-// ¿¹Á¦ 5-4 : ¸Þ¼Òµå ¿À¹ö¶óÀÌµù ¸¸µé±â
+package chap05.Practice05;
+// ï¿½ï¿½ï¿½ï¿½ 5-4 : ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 class DObject {
 	public DObject next;
 	public DObject() { next = null;}

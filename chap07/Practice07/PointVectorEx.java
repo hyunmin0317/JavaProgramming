@@ -1,6 +1,6 @@
-package Practice07;
+package chap07.Practice07;
 import java.util.Vector;
-// ¿¹Á¦ 7-2 Point Å¬·¡½ºÀÇ °´Ã¼µé¸¸ ÀúÀåÇÏ´Â º¤ÅÍ ¸¸µé±â
+// ï¿½ï¿½ï¿½ï¿½ 7-2 Point Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½é¸¸ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 class Point {
 	private int x, y;
 	public Point(int x, int y) {

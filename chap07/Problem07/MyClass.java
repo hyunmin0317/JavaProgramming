@@ -1,5 +1,5 @@
-package Problem07;
-// ½Ç½À 07-02
+package chap07.Problem07;
+// ï¿½Ç½ï¿½ 07-02
 public class MyClass<E> {
     private E e;
     public MyClass(E e){
@@ -12,7 +12,7 @@ public class MyClass<E> {
         return e;
     }
     public static void main(String[] args) {
-    	MyClass<String> s = new MyClass<String>("ÃÖÇö¹Î");
+    	MyClass<String> s = new MyClass<String>("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
     	MyClass<Integer> i = new MyClass<Integer>(19990317);
         System.out.println(s.getS());
         System.out.println(i.getS());

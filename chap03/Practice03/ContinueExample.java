@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 
 public class ContinueExample {
 	public static void main(String[] args) {
@@ -9,6 +9,6 @@ public class ContinueExample {
 			else
 				sum+=i;
 		}
-		System.out.println("1╨нем 100╠НаЖ б╕╪Жюг гую╨ " + sum + "юл╢ы.");
+		System.out.println("1О©╫О©╫О©╫О©╫ 100О©╫О©╫О©╫О©╫ б╕О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ " + sum + "О©╫л╢О©╫.");
 	}
 }

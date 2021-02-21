@@ -1,19 +1,19 @@
-package Problem04;
+package chap04.Problem04;
 import java.util.Scanner;
-//½Ç½À04-05
+//ï¿½Ç½ï¿½04-05
 public class DicManager {
 	public static void main(String[] args) {
 		String word;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇÑ¿µ ´Ü¾î °Ë»ö ÇÁ·Î±×·¥ÀÔ´Ï´Ù.");
-		while(true) {	//±×¸¸À» ÀÔ·ÂÇÒ¶§±îÁö ¹Ýº¹
-			System.out.print("ÇÑ±Û ´Ü¾î? ");
+		System.out.println("ï¿½Ñ¿ï¿½ ï¿½Ü¾ï¿½ ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½Ô´Ï´ï¿½.");
+		while(true) {	//ï¿½×¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ò¶ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ýºï¿½
+			System.out.print("ï¿½Ñ±ï¿½ ï¿½Ü¾ï¿½? ");
 			word = sc.next();
-			if(word.equals("±×¸¸")) {
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			if(word.equals("ï¿½×¸ï¿½")) {
+				System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 				break;
-			}	//°Ë»öÇÏ´Â ´Ü¾î¸¦ kor2Eng ¸Þ¼Òµå·Î °Ë»ö
-			System.out.println(word+"Àº(´Â) "+Dictionary.kor2Eng(word));
+			}	//ï¿½Ë»ï¿½ï¿½Ï´ï¿½ ï¿½Ü¾î¸¦ kor2Eng ï¿½Þ¼Òµï¿½ï¿½ ï¿½Ë»ï¿½
+			System.out.println(word+"ï¿½ï¿½(ï¿½ï¿½) "+Dictionary.kor2Eng(word));
 		}
 		sc.close();
 	}

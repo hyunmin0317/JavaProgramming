@@ -1,6 +1,6 @@
-package Practice08;
+package chap08.Practice08;
 import java.io.File;
-// ¿¹Á¦ 8-8 : File Å¬·¡½º È°¿ëÇÑ ÆÄÀÏ °ü¸®
+// ï¿½ï¿½ï¿½ï¿½ 8-8 : File Å¬ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class FileClassExample {
 	public static void dir(File fd) {
 		String[] filenames = fd.list(); 
@@ -8,8 +8,8 @@ public class FileClassExample {
 			File f = new File(fd, s);
 			long t = f.lastModified();
 			System.out.print(s);
-			System.out.print("\tÆÄÀÏ Å©±â: " + f.length());
-			System.out.printf("\t¼öÁ¤ÇÑ ½Ã°£: %tb %td %ta %tT\n",t, t, t, t);
+			System.out.print("\tï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½: " + f.length());
+			System.out.printf("\tï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½: %tb %td %ta %tT\n",t, t, t, t);
 		}		
 	}
 	public static void main(String[] args) {
@@ -18,19 +18,19 @@ public class FileClassExample {
 		File f3 = new File("c:\\tmp");
 		String res;
 		if(f1.isFile())
-			res = "ÆÄÀÏ";
+			res = "ï¿½ï¿½ï¿½ï¿½";
 		else
-			res = "µð·ºÅÍ¸®";
-		System.out.println(f1.getPath() + "Àº " + res + "ÀÔ´Ï´Ù.");
+			res = "ï¿½ï¿½ï¿½Í¸ï¿½";
+		System.out.println(f1.getPath() + "ï¿½ï¿½ " + res + "ï¿½Ô´Ï´ï¿½.");
 		if (!f2.exists()) {
 			if (!f2.mkdir())
-				System.out.println("µð·ºÅÍ¸® »ý¼º ½ÇÆÐ");
+				System.out.println("ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 		if(f2.isFile())
-			res = "ÆÄÀÏ";
+			res = "ï¿½ï¿½ï¿½ï¿½";
 		else
-			res = "µð·ºÅÍ¸®";
-		System.out.println(f2.getPath() + "Àº " + res + "ÀÔ´Ï´Ù.");
+			res = "ï¿½ï¿½ï¿½Í¸ï¿½";
+		System.out.println(f2.getPath() + "ï¿½ï¿½ " + res + "ï¿½Ô´Ï´ï¿½.");
 		dir(f3);
 		f2.renameTo(new File("c:\\tmp\\javasample")); 	
 		dir(f3);

@@ -1,4 +1,4 @@
-package Problem04;
+package chap04.Problem04;
 import java.util.Scanner;
 
 public class Reserve {
@@ -7,9 +7,9 @@ public class Reserve {
         Scanner sc = new Scanner(System.in);
         int select;
         while (true) {
-            System.out.print("¿¹¾à<1>, Á¶È¸<2>, Ãë¼Ò<3>, ³¡³»±â<4>>> ");
+            System.out.print("ï¿½ï¿½ï¿½ï¿½<1>, ï¿½ï¿½È¸<2>, ï¿½ï¿½ï¿½<3>, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<4>>> ");
             select = sc.nextInt();
-            switch (select) {	//ÀÔ·ÂµÈ ¹øÈ£¿¡ µû¶ó ´Ù¸¥ ¸Þ¼Òµå ½ÇÇà
+            switch (select) {	//ï¿½Ô·Âµï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½
             case 1:
                 st.seat_reserve();
                 break;
@@ -20,11 +20,11 @@ public class Reserve {
                 st.seat_cancle();
                 break;
             case 4:
-            	System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+            	System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
             	sc.close();
                 return;
             default:
-                System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù (1 ~ 4).");
+                System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½ (1 ~ 4).");
                 continue;
             }
         }

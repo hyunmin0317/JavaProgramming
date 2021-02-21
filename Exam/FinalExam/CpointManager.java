@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 
 public class CpointManager {
    public static void main(String[] args) {

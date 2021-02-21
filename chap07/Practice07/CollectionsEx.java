@@ -1,6 +1,6 @@
-package Practice07;
+package chap07.Practice07;
 import java.util.*;
-// ¿¹Á¦ 7-8 : Collections Å¬·¡½ºÀÇ È°¿ë
+// ï¿½ï¿½ï¿½ï¿½ 7-8 : Collections Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½
 public class CollectionsEx {
 		static void printList(LinkedList<String> l) { 
 			Iterator<String> iterator = l.iterator(); 
@@ -16,16 +16,16 @@ public class CollectionsEx {
 		}
 		public static void main(String[] args) {
 			LinkedList<String> myList = new LinkedList<String>(); 						
-			myList.add("Æ®·£½ºÆ÷¸Ó");
-			myList.add("½ºÅ¸¿öÁî");
-			myList.add("¸ÅÆ®¸¯½º");
-			myList.add(0,"ÅÍ¹Ì³×ÀÌÅÍ");
-			myList.add(2,"¾Æ¹ÙÅ¸");
-			Collections.sort(myList); // ¿ä¼Ò Á¤·Ä
-			printList(myList); // Á¤·ÄµÈ ¿ä¼Ò Ãâ·Â
-			Collections.reverse(myList); // ¿ä¼ÒÀÇ ¼ø¼­¸¦ ¹Ý´ë·Î
-			printList(myList); // ¿ä¼Ò Ãâ·Â
-			int index = Collections.binarySearch(myList, "¾Æ¹ÙÅ¸") + 1; 
-			System.out.println("¾Æ¹ÙÅ¸´Â " + index + "¹øÂ° ¿ä¼ÒÀÔ´Ï´Ù.");
+			myList.add("Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			myList.add("ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½");
+			myList.add("ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½");
+			myList.add(0,"ï¿½Í¹Ì³ï¿½ï¿½ï¿½ï¿½ï¿½");
+			myList.add(2,"ï¿½Æ¹ï¿½Å¸");
+			Collections.sort(myList); // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			printList(myList); // ï¿½ï¿½ï¿½Äµï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+			Collections.reverse(myList); // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý´ï¿½ï¿½
+			printList(myList); // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+			int index = Collections.binarySearch(myList, "ï¿½Æ¹ï¿½Å¸") + 1; 
+			System.out.println("ï¿½Æ¹ï¿½Å¸ï¿½ï¿½ " + index + "ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 	}
 }

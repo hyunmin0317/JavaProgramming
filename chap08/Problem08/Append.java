@@ -1,24 +1,24 @@
-package Problem08;
+package chap08.Problem08;
 import java.io.*;
 import java.util.Scanner;
-// ½Ç½À 08-01
+// ï¿½Ç½ï¿½ 08-01
 public class Append {
     public static void main(String[] args) {
-        FileReader f1 = null;	// Ã¹¹øÂ° ÆÄÀÏ
-        FileReader f2 = null;	// µÎ¹øÂ° ÆÄÀÏ
-        FileWriter f3 = null;	// »õ·Î¿î ÆÄÀÏ
-        Scanner sc = new Scanner(System.in);	// ÆÄÀÏ ÀÌ¸§À» ÀÔ·Â¹ÞÀ» Scanner
+        FileReader f1 = null;	// Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½
+        FileReader f2 = null;	// ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½ï¿½
+        FileWriter f3 = null;	// ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·Â¹ï¿½ï¿½ï¿½ Scanner
         try {
             int c;
             f1 = new FileReader("C:\\Java\\JavaProgramming\\src\\Problem08\\"+sc.next()+".txt");
             f2 = new FileReader("C:\\Java\\JavaProgramming\\src\\Problem08\\"+sc.next()+".txt");
-            // ÆÄÀÏ ÀÌ¸§À» ÀÔ·Â
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½
             f3 = new FileWriter("C:\\Java\\JavaProgramming\\src\\Problem08\\newfile.txt");
-            // »õ·Î¿î ÆÄÀÏ »ý¼º
-            while((c = f1.read())!=-1) { // f1ÀÇ ³»¿ëÀ» f3¿¡ ÀÛ¼º
+            // ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            while((c = f1.read())!=-1) { // f1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ f3ï¿½ï¿½ ï¿½Û¼ï¿½
                 f3.write(c);
             }
-            while((c = f2.read())!=-1) { // f2ÀÇ ³»¿ëÀ» f3¿¡ ÀÛ¼º
+            while((c = f2.read())!=-1) { // f2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ f3ï¿½ï¿½ ï¿½Û¼ï¿½
                 f3.write(c);
             }
             f1.close();
@@ -26,7 +26,7 @@ public class Append {
             f3.close();
             sc.close();
         } catch (IOException e) {
-            System.out.println("ÆÄÀÏ ÀÔÃâ·Â ¿À·ù");
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
         }
     }
 }

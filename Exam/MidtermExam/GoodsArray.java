@@ -1,6 +1,6 @@
-package MidtermExam;
+package Exam.MidtermExam;
 import java.util.Scanner;
-// Áß°£°í»ç 3¹ø ¹®Á¦
+// ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 class Goods {
 	private String name;
 	private int price;
@@ -23,10 +23,10 @@ public class GoodsArray {
 		int i;
 		Scanner sc = new Scanner(System.in);
 		Goods[] G = new Goods[3];
-		System.out.println("»óÇ° ¼¼°³¸¦ Â÷·Ê·Î ÀÔ·ÂÇÏ¶ó.");
+		System.out.println("ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ê·ï¿½ ï¿½Ô·ï¿½ï¿½Ï¶ï¿½.");
 		for(i=0; i<G.length; i++)
 			G[i] = new Goods(sc.next(), sc.nextInt(), sc.nextInt(), sc.nextInt());
-		System.out.println("ÀÔ·ÂµÈ »óÇ° Á¤º¸´Â ´ÙÀ½°ú °°½À´Ï´Ù.");
+		System.out.println("ï¿½Ô·Âµï¿½ ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		for(i=0; i<G.length; i++)
 			System.out.println(G[i].getName()+" "+G[i].getPrice()+" "+G[i].getNumberOfStock()+" "+G[i].getSold());		
 		sc.close();

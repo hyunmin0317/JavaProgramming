@@ -1,4 +1,4 @@
-package Problem03;
+package chap03.Problem03;
 
 public class TwoDArray {
 	public static void main(String[] args) {

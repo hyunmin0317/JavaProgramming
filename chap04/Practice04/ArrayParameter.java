@@ -1,5 +1,5 @@
-package Practice04;
-// ¿¹Á¦ 4-4 : ¹è¿­ÀÇ Àü´Þ
+package chap04.Practice04;
+// ï¿½ï¿½ï¿½ï¿½ 4-4 : ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class ArrayParameter {
 	static void replaceSpace(char a[]) {
 		for (int i = 0; i < a.length; i++)

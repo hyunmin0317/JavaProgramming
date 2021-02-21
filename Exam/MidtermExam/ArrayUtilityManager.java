@@ -1,5 +1,5 @@
-package MidtermExam;
-// Áß°£°í»ç 5¹ø ¹®Á¦
+package Exam.MidtermExam;
+// ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ 5ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 class ArrayUtility {
 	public static int[] concat(int[] s1, int[] s2) {
 		int i,j;
@@ -45,12 +45,12 @@ public class ArrayUtilityManager {
 	public static void main(String[] args) {
 		int [] s1 = {1, 2, 3, 4};
 		int [] s2 = {3, 4, 5, 6};	
-		int [] concat, remove;	// °á°ú¸¦ ´ãÀ» intÇü ¹è¿­ concat°ú remove ¼±¾ð
-		concat = ArrayUtility.concat(s1, s2);	//concat¸Þ¼Òµå¸¦ ÅëÇØ µÎ ¹è¿­À» ¿¬°á
-		remove = ArrayUtility.remove(s1, s2);	//remove¸Þ¼Òµå¸¦ ÅëÇØ ´Ù¸¥ °ª¸¸ ÀúÀå
-		System.out.print("concatÀÇ °á°ú : ");	
-		ArrayUtility.print(concat);		//concatÀÇ °á°ú Ãâ·Â
-		System.out.print("removeÀÇ °á°ú : ");
-		ArrayUtility.print(remove);		//removeÀÇ °á°ú Ãâ·Â
+		int [] concat, remove;	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ intï¿½ï¿½ ï¿½è¿­ concatï¿½ï¿½ remove ï¿½ï¿½ï¿½ï¿½
+		concat = ArrayUtility.concat(s1, s2);	//concatï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		remove = ArrayUtility.remove(s1, s2);	//removeï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		System.out.print("concatï¿½ï¿½ ï¿½ï¿½ï¿½ : ");	
+		ArrayUtility.print(concat);		//concatï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+		System.out.print("removeï¿½ï¿½ ï¿½ï¿½ï¿½ : ");
+		ArrayUtility.print(remove);		//removeï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	}
 }

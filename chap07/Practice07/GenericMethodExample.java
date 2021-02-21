@@ -1,25 +1,25 @@
-package Practice07;
+package chap07.Practice07;
 
 public class GenericMethodExample {
-	// T°¡ Å¸ÀÔ ¸Å°³ º¯¼öÀÎ Á¦³×¸¯ ¸Þ¼Òµå
+	// Tï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½Å°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½×¸ï¿½ ï¿½Þ¼Òµï¿½
 	public static <T> GStack<T> reverse(GStack<T> a) { 	
 		GStack<T> s = new GStack<T>(); 
 		while (true) {
 			T tmp; 
-			tmp = a.pop(); // ¿ø·¡ ½ºÅÃ¿¡¼­ ¿ä¼Ò ÇÏ³ª¸¦ ²¨³¿
-			if (tmp==null) // ½ºÅÃÀÌ ºñ¾úÀ½
+			tmp = a.pop(); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			if (tmp==null) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 				break;
 			else 
-				s.push(tmp); // »õ ½ºÅÃ¿¡ ¿ä¼Ò¸¦ »ðÀÔ
+				s.push(tmp); // ï¿½ï¿½ ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 		}
-		return s; // »õ ½ºÅÃÀ» ¹ÝÈ¯
+		return s; // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	}
 	public static void main(String[] args) {
-		// Double Å¸ÀÔÀÇ GStack »ý¼º
+		// Double Å¸ï¿½ï¿½ï¿½ï¿½ GStack ï¿½ï¿½ï¿½ï¿½
 		GStack<Double> gs = 
 				new GStack<Double>(); 
 
-		// 5°³ÀÇ ¿ä¼Ò¸¦ ½ºÅÃ¿¡ push
+		// 5ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½Ã¿ï¿½ push
 		for (int i=0; i<5; i++) { 
 			gs.push((double)i); 
 		}

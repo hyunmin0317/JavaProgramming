@@ -1,23 +1,23 @@
-package Problem06;
+package chap06.Problem06;
 import java.io.*;
 import java.util.StringTokenizer;
  
 public class Split {
     public static void main(String[] args) {
-    	StringBuffer sb = new StringBuffer(); // Å° ÀÔ·ÂÀ» ¹ÞÀ» ½ºÆ®¸µ ¹öÆÛ
+    	StringBuffer sb = new StringBuffer(); // Å° ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         InputStreamReader rd = new InputStreamReader(System.in);
-        try { // Å°º¸µå·ÎºÎÅÍ ¹®ÀÚ¿­À» ÀÐ¾î ½ºÆ®¸µ ¹öÆÛ¿¡ ÀúÀåÇÔ
+        try { // Å°ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ð¾ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½Û¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         	while (true) {
-                    int c = rd.read(); // ctrl-z°¡ ÀÔ·ÂµÇ¸é -1À» ¹ÝÈ¯ÇÔ
+                    int c = rd.read(); // ctrl-zï¿½ï¿½ ï¿½Ô·ÂµÇ¸ï¿½ -1ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½
                     if (c == -1)
                         break;
-                    sb.append((char) c); // ÀÐÀº ¹®ÀÚ¸¦ ½ºÆ®¸µ ¹öÆÛ¿¡ Ãß°¡ÇÔ
+                    sb.append((char) c); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½Û¿ï¿½ ï¿½ß°ï¿½ï¿½ï¿½
                 }
             } 
             catch (IOException e) {
-                System.out.println("ÀÔ·Â ¿¡·¯ ¹ß»ý");
+                System.out.println("ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½");
                 }
-            StringTokenizer st = new StringTokenizer(sb.toString(), " "); // StringBuffer¸¦ StringÀ¸·Î ¹Ù²Û ÈÄ Tokenizer¸¦ ÀÌ¿ëÇØ ºÐ¸®
-            System.out.println("´Ü¾îÀÇ °³¼ö: "+st.countTokens()); // Token °³¼ö Ãâ·Â
+            StringTokenizer st = new StringTokenizer(sb.toString(), " "); // StringBufferï¿½ï¿½ Stringï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½ ï¿½ï¿½ Tokenizerï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½Ð¸ï¿½
+            System.out.println("ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: "+st.countTokens()); // Token ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
     }
 }

@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 import java.util.Scanner;
 
 public class ExceptionExample2 {
@@ -6,15 +6,15 @@ public class ExceptionExample2 {
 		Scanner sc = new Scanner(System.in);
 		int divisor = 0;
 		int dividend = 0;
-		System.out.print("³ª´¸¼ö¸¦ ÀÔ·Â: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½: ");
 		dividend = sc.nextInt();
-		System.out.print("³ª´°¼ö¸¦ ÀÔ·Â: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½: ");
 		divisor = sc.nextInt();
 		try {
-			System.out.println(dividend+"¸¦" +divisor+"·Î ³ª´©¸é ¸òÀº "
-		+dividend/divisor+"ÀÔ´Ï´Ù.");
+			System.out.println(dividend+"ï¿½ï¿½" +divisor+"ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ "
+		+dividend/divisor+"ï¿½Ô´Ï´ï¿½.");
 		}catch (ArithmeticException e) {
-			System.out.println("0À¸·Î ³ª´­ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("0ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}		
 		sc.close();
 	}

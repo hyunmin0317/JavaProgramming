@@ -1,6 +1,6 @@
-package Practice04;
+package chap04.Practice04;
 import java.util.Scanner;
-// ¿¹Á¦ 4-2 : Áö¼ö Å¬·¡½º MyExp ¸¸µé±â
+// ï¿½ï¿½ï¿½ï¿½ 4-2 : ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ MyExp ï¿½ï¿½ï¿½ï¿½ï¿½
 public class MyExp {
 	int base, exp;
 	int getValue() {
@@ -14,7 +14,7 @@ public class MyExp {
 		MyExp ex = new MyExp();
 		ex.base = sc.nextInt();
 		ex.exp = sc.nextInt();
-		System.out.println(ex.base+"ÀÇ "+ex.exp+"½Â = "+ex.getValue());
+		System.out.println(ex.base+"ï¿½ï¿½ "+ex.exp+"ï¿½ï¿½ = "+ex.getValue());
 		sc.close();
 	}
 }

@@ -1,6 +1,6 @@
-package Practice08;
+package chap08.Practice08;
 import java.io.*;
-// ¿¹Á¦ 8-1 : À©µµ¿ì¿¡ ÀÖ´Â system.ini ÆÄÀÏÀ» ÀÐ¾î È­¸é¿¡ Ãâ·ÂÇÏ±â
+// ï¿½ï¿½ï¿½ï¿½ 8-1 : ï¿½ï¿½ï¿½ï¿½ï¿½ì¿¡ ï¿½Ö´ï¿½ system.ini ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð¾ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
 public class FileInputStreamEx {
 	public static void main(String[] args) {
 		FileInputStream in = null;
@@ -12,7 +12,7 @@ public class FileInputStreamEx {
 			}
 			in.close();
 		} catch (IOException e) {
-			System.out.println("ÀÔÃâ·Â ¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 }

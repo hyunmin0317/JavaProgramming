@@ -1,6 +1,6 @@
-package Problem04;
+package chap04.Problem04;
 import java.util.Scanner;
-//¿¹Á¦04-06
+//ï¿½ï¿½ï¿½ï¿½04-06
 public class Calculate {
 	public static void main(String[] args) {
 		int a, b;
@@ -12,33 +12,33 @@ public class Calculate {
 		Mul mul = new Mul();
 		Div div = new Div();
 		
-		System.out.print("µÎ Á¤¼ö¿Í ¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À>> ");
+		System.out.print("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½>> ");
 		a = sc.nextInt();
 		b = sc.nextInt();
 		c = sc.next();
 		
-		if(c.equals("+")) {		//¿¬»êÀÚ°¡ +ÀÏ¶§ addÀÇ calculate ¸Þ¼Òµå ½ÇÇà
+		if(c.equals("+")) {		//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ +ï¿½Ï¶ï¿½ addï¿½ï¿½ calculate ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½
 			add.setValue(a, b);
 			System.out.println(add.calculate());
 		}
-		else if(c.equals("-")) {	//¿¬»êÀÚ°¡ -ÀÏ¶§ divÀÇ calculate ¸Þ¼Òµå ½ÇÇà
+		else if(c.equals("-")) {	//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ -ï¿½Ï¶ï¿½ divï¿½ï¿½ calculate ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½
 			sub.setValue(a, b);
 			System.out.println(sub.calculate());
 		}
-		else if(c.equals("*")) {	//¿¬»êÀÚ°¡ *ÀÏ¶§ mulÀÇ calculate ¸Þ¼Òµå ½ÇÇà
+		else if(c.equals("*")) {	//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ *ï¿½Ï¶ï¿½ mulï¿½ï¿½ calculate ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½
 			mul.setValue(a, b);
 			System.out.println(mul.calculate());
 		}
-		else if(c.equals("/")) {	//¿¬»êÀÚ°¡ /ÀÏ¶§ divÀÇ calculate ¸Þ¼Òµå ½ÇÇà
-			if(b==0)	//¿¹¿ÜÃ³¸®
-				System.out.println(b+"À¸·Î ³ª´­ ¼ö ¾ø½À´Ï´Ù.");
+		else if(c.equals("/")) {	//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ /ï¿½Ï¶ï¿½ divï¿½ï¿½ calculate ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½
+			if(b==0)	//ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½
+				System.out.println(b+"ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			else {
 				div.setValue(a, b);
 				System.out.println(div.calculate());
 			}
 		}
 		else
-			System.out.println("¿¬»êÀÚ¸¦ ´Ù½Ã ÀÔ·ÂÇÏ½Ã¿À.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½.");
 		sc.close();
 	}
 }

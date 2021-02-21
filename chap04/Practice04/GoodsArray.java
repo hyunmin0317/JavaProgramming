@@ -1,6 +1,6 @@
-package Practice04;
+package chap04.Practice04;
 import java.util.Scanner;
-// ¿¹Á¦ 4-3 : °´Ã¼ ¹è¿­ »ý¼º
+// ï¿½ï¿½ï¿½ï¿½ 4-3 : ï¿½ï¿½Ã¼ ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
 class Good {
 	private String name;
 	private int price;

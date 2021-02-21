@@ -1,4 +1,4 @@
-package Problem03;
+package chap03.Problem03;
 import java.util.Scanner;
 
 public class BubbleSort {

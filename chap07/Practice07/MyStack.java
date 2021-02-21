@@ -1,4 +1,4 @@
-package Practice07;
+package chap07.Practice07;
 
 class GStack<T> {
 	int tos; 

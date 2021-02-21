@@ -1,6 +1,6 @@
-package Practice08;
+package chap08.Practice08;
 import java.io.*;
-// ¿¹Á¦ 8-7 : ¹öÆÛ ½ºÆ®¸²À» ÀÌ¿ëÇÏ´Â Ãâ·Â ¿¹Á¦
+// ï¿½ï¿½ï¿½ï¿½ 8-7 : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class BufferedIOEx {
 	public static void main(String[] args) {
 		InputStreamReader in = new InputStreamReader(System.in);
@@ -16,7 +16,7 @@ public class BufferedIOEx {
 				out.close();
 			}
 		} catch (IOException e) {
-			System.out.println("ÀÔÃâ·Â ¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 }

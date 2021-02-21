@@ -1,5 +1,5 @@
-package Practice06;
-// ¿¹Á¦ 6-1 : Rect Å¬·¡½º ¸¸µé°í equals() ¸¸µé±â
+package chap06.Practice06;
+// ï¿½ï¿½ï¿½ï¿½ 6-1 : Rect Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ equals() ï¿½ï¿½ï¿½ï¿½ï¿½
 class Rect {
 	int width;
 	int height;

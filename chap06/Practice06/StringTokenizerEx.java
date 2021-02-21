@@ -1,9 +1,9 @@
-package Practice06;
+package chap06.Practice06;
 import java.util.StringTokenizer;
-// ¿¹Á¦ 6-6 : StringTokenizer Å¬·¡½º ¸Þ¼Òµå È°¿ë
+// ï¿½ï¿½ï¿½ï¿½ 6-6 : StringTokenizer Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½ È°ï¿½ï¿½
 public class StringTokenizerEx {
 	public static void main(String[] args) {
-		StringTokenizer st = new StringTokenizer("È«±æµ¿/ÀåÈ­/È«·Ã/ÄáÁã/ÆÏÁã", "/");
+		StringTokenizer st = new StringTokenizer("È«ï¿½æµ¿/ï¿½ï¿½È­/È«ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½", "/");
 		while (st.hasMoreTokens()) 
 			System.out.println(st.nextToken());
 	}

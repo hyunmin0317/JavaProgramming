@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 
 public class GraphicArray {
 	int count = 0;
@@ -11,13 +11,13 @@ public class GraphicArray {
 		if(count!=0)
 			count--;
 		else
-			System.out.println("»èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 	}
 	public void showAll() {
 		if(count!=0)
 			for(int i=count-1; i>=0; i--)
 				arr[i].draw();		
 		else
-			System.out.println("ÀúÀåµÈ µµÇüÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 	}
 }

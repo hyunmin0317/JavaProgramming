@@ -1,12 +1,12 @@
-package Problem04;
-//½Ç½À04-06
+package chap04.Problem04;
+//ï¿½Ç½ï¿½04-06
 public class Div {
 	double a,b;
-	void setValue(int a, int b) {	//°ªÀ» ÀúÀå
+	void setValue(int a, int b) {	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		this.a = a;
 		this.b= b;
 	}
-	double calculate() {	//°ªÀ» °è»êÇÏ¿© ¹ÝÈ¯
+	double calculate() {	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½È¯
 		return a/b;
 	}
 }

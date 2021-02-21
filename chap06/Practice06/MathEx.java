@@ -1,5 +1,5 @@
-package Practice06;
-// ¿¹Á¦ 6-7 : Math Å¬·¡½º ¸Þ¼Òµå È°¿ë
+package chap06.Practice06;
+// ï¿½ï¿½ï¿½ï¿½ 6-7 : Math Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½ È°ï¿½ï¿½
 public class MathEx {
 	public static void main(String[] args) {
 		double a = -2.78987434;
@@ -10,9 +10,9 @@ public class MathEx {
 		System.out.println(Math.exp(1.5));
 		System.out.println(Math.rint(3.141592));
 
-		System.out.print("ÀÌ¹øÁÖ Çà¿îÀÇ ¹øÈ£´Â");
+		System.out.print("ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½");
 		for (int i=0; i<5; i++) 
 			System.out.print(Math.round(1 + Math.random() * 44) + " ");
-		System.out.println("ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½Ô´Ï´ï¿½.");
 	}
 }

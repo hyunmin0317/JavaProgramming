@@ -1,5 +1,5 @@
-package MidtermExam;
-// Áß°£°í»ç 2¹ø ¹®Á¦
+package Exam.MidtermExam;
+// ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class Sort {
 	public static void BubbleSort(int[] arr) {
 		int i, j; 

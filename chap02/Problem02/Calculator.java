@@ -1,4 +1,4 @@
-package Problem02;
+package chap02.Problem02;
 
 import java.util.Scanner;
 
@@ -8,27 +8,27 @@ public class Calculator {
 		String operand;
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("»çÄ¢¿¬»ê °è»ê ÇÁ·Î±×·¥(+,-,%,*,/)>> ");
+		System.out.print("ï¿½ï¿½Ä¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½(+,-,%,*,/)>> ");
 		num1 = sc.nextDouble();		
-		operand = sc.next();		//¿¬»êÀÚ¸¦ StringÇüÀ¸·Î ¹ÞÀ½
+		operand = sc.next();		//ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ Stringï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		num2 = sc.nextDouble();
 		
 		switch(operand) {
-		case "+":	//¿¬»êÀÚ°¡ "+"ÀÏ¶§
+		case "+":	//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ "+"ï¿½Ï¶ï¿½
 			System.out.println(num1+" + "+num2+" = "+(num1+num2));
 			break;
-		case "-":	//¿¬»êÀÚ°¡ "-"ÀÏ¶§
+		case "-":	//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ "-"ï¿½Ï¶ï¿½
 			System.out.println(num1+" - "+num2+" = "+(num1-num2));
 			break;
-		case "%":	//¿¬»êÀÚ°¡ "%"ÀÏ¶§
+		case "%":	//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ "%"ï¿½Ï¶ï¿½
 			System.out.println(num1+" % "+num2+" = "+(num1%num2));
 			break;
-		case "*":	//¿¬»êÀÚ°¡ "*"ÀÏ¶§
+		case "*":	//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ "*"ï¿½Ï¶ï¿½
 			System.out.println(num1+" * "+num2+" = "+(num1*num2));
 			break;
-		case "/":	//¿¬»êÀÚ°¡ "/"ÀÏ¶§
-			if (num2 == 0)	//³ª´©´Â ¼öÀÎ num2°¡ 0ÀÏ¶§
-				System.out.println("0À¸·Î ³ª´­ ¼ö ¾ø½À´Ï´Ù.");
+		case "/":	//ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ "/"ï¿½Ï¶ï¿½
+			if (num2 == 0)	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ num2ï¿½ï¿½ 0ï¿½Ï¶ï¿½
+				System.out.println("0ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			else
 				System.out.println(num1+" / "+num2+" = "+(num1/num2));
 			break;

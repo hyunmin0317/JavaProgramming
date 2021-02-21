@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 import java.util.Scanner;
 
 public class ArrayAccess {
@@ -12,7 +12,7 @@ public class ArrayAccess {
 			if (intArray[i] > max)
 				max = intArray[i];
 		}
-		System.out.println("ÀÔ·ÂµÈ ¼ö Áß °¡Àå Å« ¼ö´Â " + max + "ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½Ô·Âµï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å« ï¿½ï¿½ï¿½ï¿½ " + max + "ï¿½Ô´Ï´ï¿½.");
 		sc.close();
 	}
 }

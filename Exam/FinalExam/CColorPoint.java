@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 
 public class CColorPoint extends Cpoint{
    public CColorPoint(int a, int b, String s) {

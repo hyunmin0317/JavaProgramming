@@ -1,5 +1,5 @@
-package Practice04;
-// ¿¹Á¦ 4-7 : Á¢±Ù ÁöÁ¤ÀÚÀÇ »ç¿ë
+package chap04.Practice04;
+// ï¿½ï¿½ï¿½ï¿½ 4-7 : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 class Sample {
 	public int a;
 	private int b;

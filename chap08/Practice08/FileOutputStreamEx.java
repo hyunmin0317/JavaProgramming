@@ -1,6 +1,6 @@
-package Practice08;
+package chap08.Practice08;
 import java.io.*;
-// ¿¹Á¦ 8-2 : FileOutputStreamÀ» ÀÌ¿ëÇÑ ÆÄÀÏ ¾²±â
+// ï¿½ï¿½ï¿½ï¿½ 8-2 : FileOutputStreamï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class FileOutputStreamEx {
 	public static void main(String[] args) {
 		try {
@@ -17,7 +17,7 @@ public class FileOutputStreamEx {
 				System.out.print(c + " "); 
 			fin.close();
 		} catch (IOException e) {
-			System.out.println("ÀÔÃâ·Â ¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 }

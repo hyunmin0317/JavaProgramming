@@ -1,4 +1,4 @@
-package Practice02;
+package chap02.Practice02;
 
 public class Practice02_01 {
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Practice02_01 {
 		
 		circleArea = radius*radius*PI;
 		
-		System.out.print("¿øÀÇ ¸éÀû = ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = ");
 		System.out.println(circleArea);
 	}
 }

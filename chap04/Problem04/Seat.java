@@ -1,17 +1,17 @@
-package Problem04;
+package chap04.Problem04;
 import java.util.Scanner;
-// ½Ç½À04-03
+// ï¿½Ç½ï¿½04-03
 public class Seat {
 	Scanner sc = new Scanner(System.in);
-    String seats[][] = new String[3][10];	//¹®ÀÚ¿­ÀÌ ´ã±ä 2Â÷¿ø¹è¿­ »ý¼º
+    String seats[][] = new String[3][10];	//ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
 
-    public Seat() {	//»ý¼ºÀÚ ÁöÁ¤
+    public Seat() {	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 10; j++)
                 this.seats[i][j] = "---";
     }
 
-    void seat_watch(int seat) {		//ÇØ´çµÈ ÀÚ¸®ÀÇ(ÀÎµ¦½º) Á¤º¸ Ãâ·ÂÇÏ´Â ¸Þ¼Òµå
+    void seat_watch(int seat) {		//ï¿½Ø´ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½(ï¿½Îµï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
         switch (seat) {
         case 1:
             System.out.print("S>> ");
@@ -28,40 +28,40 @@ public class Seat {
         System.out.println();
     }
 
-    void seat_reserve() {	//ÀÚ¸®¸¦ ¿¹¾àÇÏ´Â ¸Þ¼Òµå
+    void seat_reserve() {	//ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
         int seat;
         String name;
         int seat_Number;
         while (true) {
-            System.out.print("ÁÂ¼®±¸ºÐ s<1>, A<2>, B<3>>> ");
-            seat = sc.nextInt();	//ÁÂ¼®±¸ºÐ ¼±ÅÃ
+            System.out.print("ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ s<1>, A<2>, B<3>>> ");
+            seat = sc.nextInt();	//ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             
             while(true) {
             	if(1<=seat && seat<=3)
             		break;
-            	System.out.println("´Ù½Ã ¼±ÅÃ ÇØÁÖ¼¼¿ä (1 ~ 3).");
+            	System.out.println("ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½ (1 ~ 3).");
             	seat = sc.nextInt();
             }
 
-            System.out.print("ÀÌ¸§>> ");
-            name = sc.next();		//ÀÌ¸§ ÀÔ·Â
-            System.out.print("¹øÈ£>> ");
-            seat_Number = sc.nextInt();	//ÁÂ¼® ¼±ÅÃ
+            System.out.print("ï¿½Ì¸ï¿½>> ");
+            name = sc.next();		//ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½
+            System.out.print("ï¿½ï¿½È£>> ");
+            seat_Number = sc.nextInt();	//ï¿½Â¼ï¿½ ï¿½ï¿½ï¿½ï¿½
 
             while(true) {
-            	if (seat_Number > 10 || seat_Number < 1) {	//¹üÀ§ ¿À·ù
-                    System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù (1 ~ 10).");
-                    System.out.println("´Ù½Ã ¼±ÅÃ ÇØÁÖ¼¼¿ä (1 ~ 10)");
+            	if (seat_Number > 10 || seat_Number < 1) {	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+                    System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½ (1 ~ 10).");
+                    System.out.println("ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½ (1 ~ 10)");
                     seat_Number = sc.nextInt();
                 }
             	else if (!this.seats[seat - 1][seat_Number - 1].equals("---")) {
-                    System.out.println("ÀÌ¹Ì ¿¹¾àµÈ ÁÂ¼®ÀÔ´Ï´Ù.");	
-                    System.out.println("´Ù½Ã ¼±ÅÃ ÇØÁÖ¼¼¿ä (1 ~ 10)");
+                    System.out.println("ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â¼ï¿½ï¿½Ô´Ï´ï¿½.");	
+                    System.out.println("ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½ (1 ~ 10)");
                     seat_Number = sc.nextInt();
                 }
-            	else {	//ÇØ´çµÈ ÀÚ¸®¸¦ ÀÌ¸§(name)À¸·Î ¹Ù²Þ
+            	else {	//ï¿½Ø´ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½(name)ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½
             		this.seats[seat - 1][seat_Number - 1] = name;
-            		System.out.println("¿¹¾àµÇ¾ú½À´Ï´Ù.");
+            		System.out.println("ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
             		break;
             	}
             }
@@ -69,8 +69,8 @@ public class Seat {
         }
     }
 
-    void seat_check() { //ÀÚ¸®¸¦ Á¶È¸ÇÏ´Â ¸Þ¼Òµå
-        for (int i = 0; i < 3; i++) {	//¸ðµç ÀÚ¸® Ãâ·Â
+    void seat_check() { //ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
+        for (int i = 0; i < 3; i++) {	//ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½
             if (i == 0)
                 System.out.print("S>> ");
             else if (i == 1)
@@ -82,31 +82,31 @@ public class Seat {
             }
             System.out.println();
         }
-        System.out.println("Á¶È¸¸¦ ¿Ï·áÇÏ¿´½À´Ï´Ù.");
+        System.out.println("ï¿½ï¿½È¸ï¿½ï¿½ ï¿½Ï·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
     }
 
-    void seat_cancle() {	//¿¹¾àÀ» Ãë¼ÒÇÏ´Â ¸Þ¼Òµå
+    void seat_cancle() {	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
         int seat;
         String name;
 
         while (true) {
-            System.out.print("ÁÂ¼®±¸ºÐ s<1>, A<2>, B<3>>> ");
-            seat = sc.nextInt();	//Ãë¼ÒÇÏ·Á´Â ÀÚ¸®¸¦ ÀÔ·Â
+            System.out.print("ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ s<1>, A<2>, B<3>>> ");
+            seat = sc.nextInt();	//ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½
             seat_watch(seat);
 
-            System.out.print("ÀÌ¸§>> ");
-            name = sc.next();	//Ãë¼ÒÇÏ·Á´Â ¿¹¾à ÀÌ¸§ ÀÔ·Â
+            System.out.print("ï¿½Ì¸ï¿½>> ");
+            name = sc.next();	//ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½
             
             for (int i = 0; i < 3; i++) {
             	for (int j = 0; j < 10; j++) {
             		if (this.seats[i][j].equals(name)) {
                          this.seats[i][j] = "---";
-                         System.out.println("Ãë¼ÒµÇ¾ú½À´Ï´Ù.");
+                         System.out.println("ï¿½ï¿½ÒµÇ¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
                          return;
                          }
             		}
             	}
-            System.out.println("¿¹¾àµÈ ÀÌ¸§ÀÌ ¾ø½À´Ï´Ù.");
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
             }
     }
 }

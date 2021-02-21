@@ -1,6 +1,6 @@
-package Practice07;
+package chap07.Practice07;
 import java.util.*;
-// ¿¹Á¦ 7-4 : Iterator¸¦ ÀÌ¿ëÇÏ¿© VectorÀÇ ¸ðµç ¿ä¼Ò Ãâ·ÂÇÏ°í ÇÕ ±¸ÇÏ±â
+// ï¿½ï¿½ï¿½ï¿½ 7-4 : Iteratorï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï¿ï¿½ Vectorï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
 public class IteratorEx {
 	public static void main(String[] args) {
 		Vector<Integer> v = new Vector<Integer>(); 
@@ -19,6 +19,6 @@ public class IteratorEx {
 			int n = it.next();
 			sum += n; 
 		}
-		System.out.println("º¤ÅÍ¿¡ ÀÖ´Â Á¤¼ö ÇÕ : " + sum);
+		System.out.println("ï¿½ï¿½ï¿½Í¿ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : " + sum);
 		}
 }

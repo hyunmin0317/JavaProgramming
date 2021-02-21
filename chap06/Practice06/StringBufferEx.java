@@ -1,19 +1,19 @@
-package Practice06;
-// ¿¹Á¦ 6-5 : StringBuffer Å¬·¡½º ¸Þ¼Òµå È°¿ë
+package chap06.Practice06;
+// ï¿½ï¿½ï¿½ï¿½ 6-5 : StringBuffer Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½ È°ï¿½ï¿½
 public class StringBufferEx {
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("This");
 		System.out.println(sb.hashCode());
-		sb.append(" is pencil");	// ¹®ÀÚ¿­ µ¡ºÙÀÌ±â
+		sb.append(" is pencil");	// ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì±ï¿½
 		System.out.println(sb);
 
-		sb.insert(7, " my");	// ¹®ÀÚ¿­ »ðÀÔ
+		sb.insert(7, " my");	// ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
 		System.out.println(sb);
 
-		sb.replace(8, 10, "your");	// ¹®ÀÚ¿­ ´ëÄ¡
+		sb.replace(8, 10, "your");	// ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½Ä¡
 		System.out.println(sb);
 
-		sb.setLength(5);	// ½ºÆ®¸µ ¹öÆÛ ³» ¹®ÀÚ¿­ ±æÀÌ ¼³Á¤
+		sb.setLength(5);	// ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
 		System.out.println(sb);
 		System.out.println(sb.hashCode());

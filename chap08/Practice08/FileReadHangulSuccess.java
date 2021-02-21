@@ -1,6 +1,6 @@
-package Practice08;
+package chap08.Practice08;
 import java.io.*;
-// ¿¹Á¦ 8-4 : ÇÑ±Û ÅØ½ºÆ® ÆÄÀÏ ÀÐ±â
+// ï¿½ï¿½ï¿½ï¿½ 8-4 : ï¿½Ñ±ï¿½ ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±ï¿½
 public class FileReadHangulSuccess {
 	public static void main(String[] args) {
 		InputStreamReader in = null;
@@ -11,14 +11,14 @@ public class FileReadHangulSuccess {
 			in = new InputStreamReader(fin, "MS949");
 			int c;
 			
-			System.out.println("ÀÎÄÚµù ¹®ÀÚ ÁýÇÕÀº "+in.getEncoding());
+			System.out.println("ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "+in.getEncoding());
 			while ((c = in.read()) != -1) {
 				System.out.print((char)c);
 			}
 			in.close();
 			fin.close();
 		} catch (IOException e) {
-			System.out.println("ÀÔÃâ·Â ¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 }

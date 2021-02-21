@@ -1,12 +1,12 @@
-package Problem04;
-//½Ç½À4-1
+package chap04.Problem04;
+//ï¿½Ç½ï¿½4-1
 public class ArrayUtility2Manger {
 	public static void main(String[] args) {
 		int [] s1 = {1,2,3,4,5,6,7,8,9};
 		int [] s2 = {2,3,5,7};	
 		int [] concat, remove;
-		concat = ArrayUtility2.concat(s1, s2);	//concat¸Þ¼Òµå¸¦ ÅëÇØ µÎ ¹è¿­À» ¿¬°á
-		remove = ArrayUtility2.remove(s1, s2);	//remove¸Þ¼Òµå¸¦ ÅëÇØ ´Ù¸¥ °ª¸¸ ÀúÀå
+		concat = ArrayUtility2.concat(s1, s2);	//concatï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		remove = ArrayUtility2.remove(s1, s2);	//removeï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		System.out.print("s1 : ");		
 		ArrayUtility2.print(s1);
 		System.out.print("s2 : ");		

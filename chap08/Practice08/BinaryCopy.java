@@ -1,6 +1,6 @@
-package Practice08;
+package chap08.Practice08;
 import java.io.*;
-// ¿¹Á¦ 8-10 : ¹ÙÀÌ³Ê¸® ÆÄÀÏ º¹»ç
+// ï¿½ï¿½ï¿½ï¿½ 8-10 : ï¿½ï¿½ï¿½Ì³Ê¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class BinaryCopy {
 	public static void main(String[] args) {
 		File src = new File("c:\\windows\\explorer.exe");
@@ -23,7 +23,7 @@ public class BinaryCopy {
 			fi.close();
 			fo.close();
 		} catch (IOException e) {
-			System.out.println("ÆÄÀÏ º¹»ç ¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 }

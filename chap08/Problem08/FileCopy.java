@@ -1,6 +1,6 @@
-package Problem08;
+package chap08.Problem08;
 import java.io.*;
-// ½Ç½À 08-02
+// ï¿½Ç½ï¿½ 08-02
 public class FileCopy {
     public static void main(String[] args) {
         FileInputStream in = null;
@@ -15,7 +15,7 @@ public class FileCopy {
             in.close();
             out.close();
         } catch(IOException e) {
-            System.out.println("ÆÄÀÏ ÀÔÃâ·Â ¿À·ù");
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
         }
     }
 }

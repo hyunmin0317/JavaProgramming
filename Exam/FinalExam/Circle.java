@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 
 public class Circle implements DObject {
 	public void draw() {

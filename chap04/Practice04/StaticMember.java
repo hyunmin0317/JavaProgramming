@@ -1,5 +1,5 @@
-package Practice04;
-// ¿¹Á¦ 4-8 : staticÀ» ÀÌ¿ëÇÑ ´Þ·¯¿Í ¿ì¸®³ª¶ó ¿øÈ­ »çÀÌÀÇ º¯È¯ ¿¹Á¦
+package chap04.Practice04;
+// ï¿½ï¿½ï¿½ï¿½ 4-8 : staticï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½Þ·ï¿½ï¿½ï¿½ ï¿½ì¸®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½
 class CurrencyConverter {
 	private static double rate;
 	public static double toDollar(double won) {
@@ -14,8 +14,8 @@ class CurrencyConverter {
 }
 public class StaticMember {
 	public static void main(String[] args) {
-		CurrencyConverter.setRate(1121); // ¹Ì±¹ ´Þ·¯ È¯À² ¼³Á¤
-		System.out.println("¹é¸¸¿øÀº " + CurrencyConverter.toDollar(1000000) + "´Þ·¯ÀÔ´Ï´Ù.");
-		System.out.println("¹é´Þ·¯´Â " + CurrencyConverter.toKWR(100) +"¿øÀÔ´Ï´Ù.");
+		CurrencyConverter.setRate(1121); // ï¿½Ì±ï¿½ ï¿½Þ·ï¿½ È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		System.out.println("ï¿½é¸¸ï¿½ï¿½ï¿½ï¿½ " + CurrencyConverter.toDollar(1000000) + "ï¿½Þ·ï¿½ï¿½Ô´Ï´ï¿½.");
+		System.out.println("ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ " + CurrencyConverter.toKWR(100) +"ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 	}
 }

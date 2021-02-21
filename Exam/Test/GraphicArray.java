@@ -1,4 +1,4 @@
-package Test;
+package Exam.Test;
 
 public class GraphicArray {
 	int count = 0;
@@ -15,10 +15,10 @@ public class GraphicArray {
                 count--;
             } 
             else
-                System.out.println("»èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 		else
-			System.out.println("»èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			
 	}
 	public void showAll() {

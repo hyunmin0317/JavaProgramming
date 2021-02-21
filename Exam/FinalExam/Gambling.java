@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 import java.util.Scanner;
 
 public class Gambling {
@@ -8,17 +8,17 @@ public class Gambling {
     	Person[] A = new Person[4];
         
     	for(i=0;i<4;i++) {
-    		System.out.print("ÇÃ·¹ÀÌ¾î "+(i+1)+"ÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ");
+    		System.out.print("ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ "+(i+1)+"ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½: ");
     		A[i] = new Person(sc.nextLine());
     	}
     	
         while(true){
         	for(i=0;i<4;i++) {
-        		System.out.print("<Enter> Å° ÀÔ·Â");
+        		System.out.print("<Enter> Å° ï¿½Ô·ï¿½");
         		if(sc.nextLine().equals("")) {
                 	if(A[i].gamble()) {
-                		System.out.println(A[i].name+ " ½Â¸®");
-                		System.out.println("°ÔÀÓ ³¡");
+                		System.out.println(A[i].name+ " ï¿½Â¸ï¿½");
+                		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½");
                 		sc.close();
                 		return;
                 	}

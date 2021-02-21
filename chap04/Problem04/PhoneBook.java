@@ -1,38 +1,38 @@
-package Problem04;
+package chap04.Problem04;
 import java.util.Scanner;
-//½Ç½À04-04
+//ï¿½Ç½ï¿½04-04
 public class PhoneBook {
 	public static void main(String[] args) {
 		int n;
 		int count;
 		String name;
 		Scanner sc = new Scanner(System.in);		
-		System.out.print("ÀÎ¿ø¼ö>> ");
+		System.out.print("ï¿½Î¿ï¿½ï¿½ï¿½>> ");
 		n = sc.nextInt();
 		Phone P[] = new Phone[n];
 		
 		for (int i = 0; i < n; i++) {
-			System.out.print("ÀÌ¸§°ú ÀüÈ­¹øÈ£(ÀÌ¸§°ú ¹øÈ£´Â ºóÄ­¾øÀÌ ÀÔ·Â)>> ");
-			P[i] = new Phone(sc.next(), sc.next()); //»ý¼ºÀÚ¸¦ ÅëÇØ ÃÊ±âÈ­
+			System.out.print("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½È£(ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½Ä­ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½)>> ");
+			P[i] = new Phone(sc.next(), sc.next()); //ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
 		}
-		System.out.println("ÀúÀåµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		
 		while(true) {
 			count = 0;
-			System.out.print("°Ë»öÇÒ ÀÌ¸§>> ");
+			System.out.print("ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½>> ");
 			name = sc.next();
-			if (name.equals("±×¸¸")) {	//±×¸¸À» ÀÔ·ÂÇÒ¶§±îÁö ¹Ýº¹
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			if (name.equals("ï¿½×¸ï¿½")) {	//ï¿½×¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ò¶ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ýºï¿½
+				System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 				break;
 			}
 			for (int i = 0; i < n; i++) {
-				if (name.equals(P[i].name)) {	//°Ë»öÇÏ´Â ´Ü¾î¿Í ÀúÀåµÈ ´Ü¾î°¡ °°À»¶§ ÇØ´ç ¹øÈ£ Ãâ·Â
-					System.out.println(P[i].name+"ÀÇ ¹øÈ£´Â "+P[i].tel+"ÀÔ´Ï´Ù.");
+				if (name.equals(P[i].name)) {	//ï¿½Ë»ï¿½ï¿½Ï´ï¿½ ï¿½Ü¾ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¾î°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½
+					System.out.println(P[i].name+"ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ "+P[i].tel+"ï¿½Ô´Ï´ï¿½.");
 					count++;
 				}
 			}
 			if (count == 0)
-				System.out.println(name+" ÀÌ ¾ø½À´Ï´Ù.");
+				System.out.println(name+" ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 		sc.close();
 	}

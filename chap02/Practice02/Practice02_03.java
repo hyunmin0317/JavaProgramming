@@ -1,4 +1,4 @@
-package Practice02;
+package chap02.Practice02;
 
 import java.util.Scanner;
 
@@ -6,17 +6,17 @@ public class Practice02_03 {
 	public static void main(String[] args) {
 		int time, second, minute, hour;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½: ");
 		
 		time = sc.nextInt();
 		second = time % 60;
 		minute = (time / 60) % 60;
 		hour = (time / 60) / 60;
 		
-		System.out.print(time + "ÃÊ´Â ");
-		System.out.print(hour + "½Ã°£, ");
-		System.out.print(minute + "ºÐ, ");
-		System.out.print(second + "ÃÊÀÔ´Ï´Ù.");
+		System.out.print(time + "ï¿½Ê´ï¿½ ");
+		System.out.print(hour + "ï¿½Ã°ï¿½, ");
+		System.out.print(minute + "ï¿½ï¿½, ");
+		System.out.print(second + "ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 		sc.close();
 	}
 }

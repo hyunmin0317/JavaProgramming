@@ -1,6 +1,6 @@
-package Problem08;
+package chap08.Problem08;
 import java.io.*;
-// ½Ç½À 08-03
+// ï¿½Ç½ï¿½ 08-03
 public class FileCopy2 {
     public static void main(String[] args) {
         FileInputStream in = null;
@@ -9,12 +9,12 @@ public class FileCopy2 {
             in = new FileInputStream("C:\\Java\\JavaProgramming\\src\\Problem08\\a.jpg");
             out = new FileOutputStream("C:\\Java\\JavaProgramming\\src\\Problem08\\b.jpg");
             int c;
-            int total = in.available();	// ÀüÃ¼ °³¼ö
-            int count=0;	 // ÇöÀç °³¼ö
+            int total = in.available();	// ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
+            int count=0;	 // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             while((c = in.read())!=-1) {
-            	if(count==total/10) { // 10% ÁøÇà µÆÀ»¶§ 
+            	if(count==total/10) { // 10% ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
                     System.out.print("*");
-                    count = 0; // ÁøÇàÀ² ÃÊ±âÈ­
+                    count = 0; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
                 }
                 out.write(c);
                 count++;
@@ -22,7 +22,7 @@ public class FileCopy2 {
             in.close();
             out.close();
         } catch(IOException e) {
-            System.out.println("ÆÄÀÏ ÀÔÃâ·Â ¿À·ù");
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
         }
     }
 }

@@ -1,21 +1,21 @@
-package Problem02;
+package chap02.Problem02;
 
 import java.util.Scanner;
 
 public class IncludeRect {
 	public static void main(String[] args) {
-		int x, y;	//Á¡ÀÇ ÁÂÇ¥
+		int x, y;	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Á¡ (x,y)ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ï¿½ï¿½ (x,y)ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 		System.out.print("x: ");
 		x = sc.nextInt();
 		System.out.print("y: ");
 		y = sc.nextInt();
 
-		if((x>=100 && x<=200) || (y>=100 && y<=200))  // x¿Í yÀÇ °ªÀÌ 100~200 ¹üÀ§ ¾È¿¡ Á¸ÀçÇÒ¶§
-			System.out.println("»ç°¢Çü ¾È¿¡ Á¡ÀÌ ÀÖ½À´Ï´Ù.");
+		if((x>=100 && x<=200) || (y>=100 && y<=200))  // xï¿½ï¿½ yï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 100~200 ï¿½ï¿½ï¿½ï¿½ ï¿½È¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ò¶ï¿½
+			System.out.println("ï¿½ç°¢ï¿½ï¿½ ï¿½È¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.");
 		else
-			System.out.println("»ç°¢Çü ¾È¿¡ Á¡ÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ç°¢ï¿½ï¿½ ï¿½È¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		sc.close();
 	}
 }

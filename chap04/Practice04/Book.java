@@ -1,5 +1,5 @@
-package Practice04;
-// ¿¹Á¦ 4-5 : »ý¼ºÀÚ Á¤ÀÇ¿Í È£Ãâ
+package chap04.Practice04;
+// ï¿½ï¿½ï¿½ï¿½ 4-5 : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç¿ï¿½ È£ï¿½ï¿½
 public class Book {
 	String title;
 	String author;
@@ -10,7 +10,7 @@ public class Book {
 		this.ISBN = ISBN;
 	}
 	public static void main(String[] args) {
-		Book javaBook = new Book("Java JDK", "È²±âÅÂ", 3333);
+		Book javaBook = new Book("Java JDK", "È²ï¿½ï¿½ï¿½ï¿½", 3333);
 		System.out.println(javaBook.title+", "+javaBook.author+", "+javaBook.ISBN);
 	}
 }

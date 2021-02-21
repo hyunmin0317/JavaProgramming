@@ -1,4 +1,4 @@
-package Practice07;
+package chap07.Practice07;
 import java.util.*;
 
 public class ArrayListEx {
@@ -8,7 +8,7 @@ public class ArrayListEx {
 		Scanner sc = new Scanner(System.in);
 		
 		for(i=0; i<4; i++) {
-			System.out.print("ÀÌ¸§ ÀÔ·Â: ");
+			System.out.print("ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½: ");
 			a.add(sc.next());
 		}
 		for(i=0; i<a.size(); i++)
@@ -16,7 +16,7 @@ public class ArrayListEx {
 		for(i=1; i<a.size(); i++)
 			if(a.get(l).length() < a.get(i).length())
 				l = i;
-		System.out.println("\n°¡Àå ±ä ÀÌ¸§: "+ a.get(l));
+		System.out.println("\nï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ì¸ï¿½: "+ a.get(l));
 		sc.close();
 	}
 }

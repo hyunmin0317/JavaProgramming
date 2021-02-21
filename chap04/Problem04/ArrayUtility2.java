@@ -1,35 +1,35 @@
-package Problem04;
-//½Ç½À04-01
+package chap04.Problem04;
+//ï¿½Ç½ï¿½04-01
 public class ArrayUtility2 {
-	static int[] concat(int[] s1, int[] s2) {	//µÎ¹è¿­À» ¿¬°áÇÏ´Â ¸Þ¼Òµå
+	static int[] concat(int[] s1, int[] s2) {	//ï¿½Î¹è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
 		int i, j;
-		int[] array = new int[s1.length+s2.length];		//»õ·Î¿î ¹è¿­ »ý¼º
-		for(i=0; i<s1.length; i++)	//¹è¿­ s1ÀÇ °ªÀ» »õ·Î¿î ¹è¿­ array¿¡ º¹»ç
+		int[] array = new int[s1.length+s2.length];		//ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
+		for(i=0; i<s1.length; i++)	//ï¿½è¿­ s1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½è¿­ arrayï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			array[i] = s1[i];
-		for(j=0; j<s2.length; i++, j++)	//¹è¿­ s1ÀÇ °ªÀ» »õ·Î¿î ¹è¿­ array¿¡ º¹»ç
+		for(j=0; j<s2.length; i++, j++)	//ï¿½è¿­ s1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½è¿­ arrayï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			array[i] = s2[j];
-		return array;	//µÎ¹è¿­À» ¿¬°áÇÑ ¹è¿­ ¹ÝÈ¯
+		return array;	//ï¿½Î¹è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ ï¿½ï¿½È¯
 	}
-	static int[] remove(int[] s1, int[] s2) {	//¹è¿­ s1¿¡¼­ ¹è¿­ s2¿Í °°Àº °ªÀ» »èÁ¦ÇÏ´Â ¸Þ¼Òµå
+	static int[] remove(int[] s1, int[] s2) {	//ï¿½è¿­ s1ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ s2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
 		int i, j;
-		int count = 0;	//¹è¿­ s1¿¡¼­ ¹è¿­ s2ÀÇ °ª°ú ´Ù¸¥ °ªÀÇ ¼ö
-		int[] arr = new int[s1.length+s2.length];	//»õ·Î¿î ¹è¿­ »ý¼º
+		int count = 0;	//ï¿½è¿­ s1ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ s2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+		int[] arr = new int[s1.length+s2.length];	//ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
 		int[] array;
 		for(i=0; i<s1.length; i++) {
 			for(j=0; j<s2.length; j++)
-				if(s1[i] == s2[j])	//¹è¿­ s1ÀÇ °ª°ú ¹è¿­ s2ÀÇ °ªÀÌ °°À»¶§
+				if(s1[i] == s2[j])	//ï¿½è¿­ s1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ s2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 					break;
-			if(j == s2.length) {	//¹è¿­ s1ÀÇ °ª°ú ¹è¿­ s2ÀÇ °ªÀÌ ´Ù¸¦¶§
-				arr[count] = s1[i];	//¹è¿­ÀÇ °ªÀ» ÀúÀå
+			if(j == s2.length) {	//ï¿½è¿­ s1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ s2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ï¿½ï¿½
+				arr[count] = s1[i];	//ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				count++;
 			}
 		}
-		array = new int[count];	//Å©±â°¡ µü¸Â´Â ¹è¿­ »ý¼ºÈÄ °ªÀ» º¹»ç
+		array = new int[count];	//Å©ï¿½â°¡ ï¿½ï¿½ï¿½Â´ï¿½ ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		for(i=0; i<count; i++)
 			array[i] = arr[i];
 		return array;
 	}
-	static void print(int [] arr) {	//¹è¿­ÀÇ °ªÀ» Ãâ·ÂÇÏ´Â ¸Þ¼Òµå
+	static void print(int [] arr) {	//ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
 		for(int i=0; i<arr.length; i++)
 			System.out.print(arr[i] + " ");
 		System.out.println();

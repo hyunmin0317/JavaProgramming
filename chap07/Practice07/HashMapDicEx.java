@@ -1,26 +1,26 @@
-package Practice07;
+package chap07.Practice07;
 import java.util.*;
-// ¿¹Á¦ 7-5 : HashMapÀ» ÀÌ¿ëÇÏ¿© ¿µ¾î ´Ü¾î¿Í ÇÑ±Û ´Ü¾î¸¦ ½ÖÀ¸·Î ÀúÀåÇÏ°í °Ë»öÇÏ´Â »ç·Ê
+// ï¿½ï¿½ï¿½ï¿½ 7-5 : HashMapï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¾ï¿½ï¿½ ï¿½Ñ±ï¿½ ï¿½Ü¾î¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ë»ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
 public class HashMapDicEx {
 	public static void main(String[] args) {
-		// ¿µ¾î ´Ü¾î¿Í ÇÑ±Û ´Ü¾îÀÇ ½ÖÀ» ÀúÀåÇÏ´Â HashMap ÄÃ·º¼Ç »ý¼º
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¾ï¿½ï¿½ ï¿½Ñ±ï¿½ ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ HashMap ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		HashMap<String, String> dic = new HashMap<String, String>();
-		// 3 °³ÀÇ (key, value) ½ÖÀ» dic¿¡ ÀúÀå
-		dic.put("baby", "¾Æ±â"); // "baby"´Â key, "¾Æ±â"Àº value
-		dic.put("love", "»ç¶û"); 
-		dic.put("apple", "»ç°ú");
-		// dic ÄÃ·º¼Ç¿¡ µé¾î ÀÖ´Â ¸ðµç (key, value) ½Ö Ãâ·Â
-		Set<String> keys = dic.keySet(); // key ¹®ÀÚ¿­À» °¡Áø Set ¸®ÅÏ
+		// 3 ï¿½ï¿½ï¿½ï¿½ (key, value) ï¿½ï¿½ï¿½ï¿½ dicï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		dic.put("baby", "ï¿½Æ±ï¿½"); // "baby"ï¿½ï¿½ key, "ï¿½Æ±ï¿½"ï¿½ï¿½ value
+		dic.put("love", "ï¿½ï¿½ï¿½"); 
+		dic.put("apple", "ï¿½ï¿½ï¿½");
+		// dic ï¿½Ã·ï¿½ï¿½Ç¿ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ (key, value) ï¿½ï¿½ ï¿½ï¿½ï¿½
+		Set<String> keys = dic.keySet(); // key ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Set ï¿½ï¿½ï¿½ï¿½
 		Iterator<String> it = keys.iterator(); 
 		while(it.hasNext()) {
 			String key = it.next();
 			String value = dic.get(key);
 			System.out.println("(" + key + "," + value + ")");
 		}
-		// ¿µ¾î ´Ü¾î¸¦ ÀÔ·Â ¹Þ°í ÇÑ±Û ´Ü¾î °Ë»ö
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¾î¸¦ ï¿½Ô·ï¿½ ï¿½Þ°ï¿½ ï¿½Ñ±ï¿½ ï¿½Ü¾ï¿½ ï¿½Ë»ï¿½
 		Scanner scanner = new Scanner(System.in);
 		for(int i=0; i<3; i++) {
-			System.out.print("Ã£°í ½ÍÀº ´Ü¾î´Â? ");
+			System.out.print("Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¾ï¿½ï¿½? ");
 			String eng = scanner.next();
 			System.out.println(dic.get(eng));
 		}

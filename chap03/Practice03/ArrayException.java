@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 
 public class ArrayException {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class ArrayException {
 			}
 		}
 		catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("¹è¿­ÀÇ ÀÎµ¦½º ¹üÀ§°¡ ¹þ¾î³µ½À´Ï´Ù.");
+			System.out.println("ï¿½è¿­ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î³µï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 	}
 }

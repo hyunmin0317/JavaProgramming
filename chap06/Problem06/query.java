@@ -1,12 +1,12 @@
-package Problem06;
+package chap06.Problem06;
 import java.util.StringTokenizer;
-//½Ç½À 06-04
+//ï¿½Ç½ï¿½ 06-04
 public class query {
   public static void main(String[] args) {
-      String query = args[0];	// ¸í·ÉÃ¢ cmd¿¡¼­ ¹ŞÀº Ã¹¹øÂ° ¹®ÀÚ¿­À» query¿¡ ÀúÀå
-      StringTokenizer t = new StringTokenizer(query, "&=");	// &¿Í =¸¦ ±âÁØÀ¸·Î ÅäÅ« ºĞ¸®
-      int n = t.countTokens();	// ÅäÅ«ÀÇ °³¼ö
-      for(int i=0;i<n;i++){	// ¸ğµç ÅäÅ«À» Ãâ·Â
+      String query = args[0];	// ï¿½ï¿½ï¿½ï¿½Ã¢ cmdï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ queryï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+      StringTokenizer t = new StringTokenizer(query, "&=");	// &ï¿½ï¿½ =ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å« ï¿½Ğ¸ï¿½
+      int n = t.countTokens();	// ï¿½ï¿½Å«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+      for(int i=0;i<n;i++){	// ï¿½ï¿½ï¿½ ï¿½ï¿½Å«ï¿½ï¿½ ï¿½ï¿½ï¿½
           if(i%2==0)
         	  System.out.print(t.nextToken()+"\t");
           else

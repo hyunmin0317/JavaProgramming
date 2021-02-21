@@ -1,4 +1,4 @@
-package Practice02;
+package chap02.Practice02;
 
 import java.util.Scanner;
 
@@ -11,17 +11,17 @@ public class Practice02_10 {
 		switch (grade) {
 		case "A":
 		case "B":
-			System.out.println("Âü ÀßÇÏ¿´½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			break;
 		case "C":
 		case "D":
-			System.out.println("Á» ´õ ³ë·ÂÇÏ¼¼¿ä.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 			break;
 		case "F":
-			System.out.println("´ÙÀ½ ÇÐ±â¿¡ ´Ù½Ã ¼ö°­ÇÏ¼¼¿ä.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±â¿¡ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 			break;
 		default:
-			System.out.println("ÇÐÁ¡À» Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			break;
 		}
 		sc.close();

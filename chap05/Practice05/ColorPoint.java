@@ -1,5 +1,5 @@
-package Practice05;
-// ¿¹Á¦ 5-1:Å¬·¡½º »ó¼Ó ¸¸µé¾î º¸±â
+package chap05.Practice05;
+// ï¿½ï¿½ï¿½ï¿½ 5-1:Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 class Point {
 	int x, y;
 	void set(int x, int y) {

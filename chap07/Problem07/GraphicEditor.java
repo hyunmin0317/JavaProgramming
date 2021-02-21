@@ -1,6 +1,6 @@
-package Problem07;
+package chap07.Problem07;
 import java.util.*;
-// ½Ç½À 07-01
+// ï¿½Ç½ï¿½ 07-01
 abstract class GraphicObject{
     int x,y,w,h;
     public GraphicObject(int x, int y, int w, int h) {
@@ -16,7 +16,7 @@ class Rect extends GraphicObject{
         super(x, y, w, h);
     }
     public void view() {
-        System.out.println(x+","+y+" -> "+w+","+h+"ÀÇ »ç°¢Çü");
+        System.out.println(x+","+y+" -> "+w+","+h+"ï¿½ï¿½ ï¿½ç°¢ï¿½ï¿½");
     }
 }
 class Line extends GraphicObject{
@@ -24,7 +24,7 @@ class Line extends GraphicObject{
         super(x, y, w, h);
     }
     public void view() {
-        System.out.println(x+","+y+" -> "+w+","+h+"ÀÇ ¼±");
+        System.out.println(x+","+y+" -> "+w+","+h+"ï¿½ï¿½ ï¿½ï¿½");
     }   
 }
 

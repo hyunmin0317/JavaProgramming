@@ -1,4 +1,4 @@
-package Practice05;
+package chap05.Practice05;
 
 class Person2 {
 	String phone;

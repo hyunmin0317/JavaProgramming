@@ -1,5 +1,5 @@
-package Practice05;
-// ¿¹Á¦ 5-6 : Ãß»ó Å¬·¡½ºÀÇ ±¸Çö
+package chap05.Practice05;
+// ï¿½ï¿½ï¿½ï¿½ 5-6 : ï¿½ß»ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 abstract class Calculator {
 public abstract int add(int a, int b);
 public abstract int subtract(int a, int b);

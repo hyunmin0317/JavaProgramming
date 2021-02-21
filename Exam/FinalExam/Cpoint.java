@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 
 public class Cpoint {
 	int a, b;
@@ -12,6 +12,6 @@ public class Cpoint {
 		System.out.println("("+a+","+b+")"+" "+ s);
 	}
     public String toString() {
-    	return "("+a+","+b+")"+" "+"�Դϴ�";
+    	return "("+a+","+b+")"+" "+"�Դϴ�";
     	}
     }

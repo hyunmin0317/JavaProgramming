@@ -1,23 +1,23 @@
-package Problem05;
-// ½Ç½À 05-01
+package chap05.Problem05;
+// ï¿½Ç½ï¿½ 05-01
 class Cpoint{
    int a, b;
    String s;
-   public Cpoint(int a, int b) {	// »ý¼ºÀÚ »ý¼º
+   public Cpoint(int a, int b) {	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
       this.a = a;
       this.b = b;
       s="";
    }
-   void show() {	// ¸Þ¼Òµå »ý¼º
+   void show() {	// ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½
       System.out.println("("+a+","+b+")"+" "+ s);
       }
-    public String toString() {	// °´Ã¼¸¦ ¹®ÀÚ¿­·Î ¹ÝÈ¯ÇÏ´Â ¸Þ¼Òµå
-       return "("+a+","+b+")"+" "+"ÀÔ´Ï´Ù";
+    public String toString() {	// ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
+       return "("+a+","+b+")"+" "+"ï¿½Ô´Ï´ï¿½";
     }
 }
-public class CColorPoint extends Cpoint {	// ½´ÆÛÅ¬·¡½º CPoint¸¦ »ó¼Ó¹Þ¾Æ ¼­ºêÅ¬·¡½º CColorPoint »ý¼º
+public class CColorPoint extends Cpoint {	// ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ CPointï¿½ï¿½ ï¿½ï¿½Ó¹Þ¾ï¿½ ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ CColorPoint ï¿½ï¿½ï¿½ï¿½
    public CColorPoint(int a, int b, String s) {
-      super(a,b);	// ½´ÆÛ Å¬·¡½ºÀÇ »ý¼ºÀÚ È£Ãâ
+      super(a,b);	// ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½
       this.s = s;
    }
    public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Test;
+package Exam.Test;
 
 public class Rect implements DObject {
 	public void draw() {

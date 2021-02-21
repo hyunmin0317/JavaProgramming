@@ -1,24 +1,24 @@
-package Problem02;
+package chap02.Problem02;
 
 import java.util.Scanner;
 
 public class Triangle {
 	public static void main(String[] args) {
-		int a, b, c;		//»ï°¢Çü 3º¯ÀÇ ±æÀÌ
+		int a, b, c;		//ï¿½ï°¢ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Á¤¼ö 3°³¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.print("Á¤¼ö1: ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½1: ");
 		a = sc.nextInt();
-		System.out.print("Á¤¼ö2: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½2: ");
 		b = sc.nextInt();
-		System.out.print("Á¤¼ö3: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½3: ");
 		c = sc.nextInt();
 		
-		if((a+b)<=c || (a+c)<=b || (b+c)<=a)	//¾î¶² µÎº¯ ±æÀÌÀÇ ÇÕÀÌ ´Ù¸¥ ÇÑº¯º¸´Ù ÀÛ°Å³ª °°À»¶§
-			System.out.println("»ï°¢Çü ¼¼º¯ÀÇ ±æÀÌ°¡ µÉ ¼ö ¾ø½À´Ï´Ù.");
+		if((a+b)<=c || (a+c)<=b || (b+c)<=a)	//ï¿½î¶² ï¿½Îºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½Ñºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println("ï¿½ï°¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		else
-			System.out.println("»ï°¢Çü ¼¼º¯ÀÇ ±æÀÌ°¡ µÉ ¼ö ÀÖ½À´Ï´Ù.");
+			System.out.println("ï¿½ï°¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.");
 		sc.close();
 	}
 }

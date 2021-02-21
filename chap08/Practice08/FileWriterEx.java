@@ -1,6 +1,6 @@
-package Practice08;
+package chap08.Practice08;
 import java.io.*;
-// ¿¹Á¦ 8-6 : Å°º¸µå ÀÔ·ÂÀ» ÆÄÀÏ·Î ÀúÀåÇÏ±â
+// ï¿½ï¿½ï¿½ï¿½ 8-6 : Å°ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
 public class FileWriterEx {
 	public static void main(String[] args) {
 		InputStreamReader in = new InputStreamReader(System.in);
@@ -14,7 +14,7 @@ public class FileWriterEx {
 			in.close();
 			fout.close();
 		} catch (IOException e) {
-			System.out.println("ÀÔÃâ·Â ¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 }

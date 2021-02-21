@@ -1,32 +1,32 @@
-package Practice06;
-// ¿¹Á¦ 6-4 : String Å¬·¡½º ¸Þ¼Òµå È°¿ë
+package chap06.Practice06;
+// ï¿½ï¿½ï¿½ï¿½ 6-4 : String Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½ È°ï¿½ï¿½
 public class StringEx {
 	public static void main(String[] args) {
 		String a = new String(" abcd");
 		String b = new String(",efg");
 
-		// ¹®ÀÚ¿­ ¿¬°á
+		// ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
 		a = a.concat(b);
 		System.out.println(a);
 
-		// °ø¹é Á¦°Å
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		a = a.trim();
 		System.out.println(a);
 		
-		// ¹®ÀÚ¿­ ´ëÄ¡
+		// ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½Ä¡
 		a = a.replace("ab","12");
 		System.out.println(a);
 		String s[] = a.split(",");
 		
-		// ¹®ÀÚ¿­ ºÐ¸®
+		// ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Ð¸ï¿½
 		for (int i=0; i<s.length; i++)
-			System.out.println("ºÐ¸®µÈ " + i + "¹ø ¹®ÀÚ¿­: " + s[i]);
+			System.out.println("ï¿½Ð¸ï¿½ï¿½ï¿½ " + i + "ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½: " + s[i]);
 		
-		// ¼­ºê ½ºÆ®¸µ
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½
 		a = a.substring(3);
 		System.out.println(a);
 		
-		// ¹®ÀÚ¿­ÀÇ ¹®ÀÚ
+		// ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		char c = a.charAt(2);
 		System.out.println(c);
 	}

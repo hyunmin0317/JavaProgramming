@@ -1,31 +1,31 @@
-package Problem07;
+package chap07.Problem07;
 import java.util.*;
-// ½Ç½À 07-04
+// ï¿½Ç½ï¿½ 07-04
 public class MyHashMap {
 	public static void main(String[] args) {
         HashMap<String, Student> dept = new HashMap<String, Student>();
         Scanner sc = new Scanner(System.in);
-        System.out.println("ÇÐ»ý Á¤º¸¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+        System.out.println("ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
         for(int i=0; i<5;i++){
         	Student st = new Student();
-        	System.out.println("\nÇÐ»ý"+(i+1));
-            System.out.print("ÀÌ¸§ ÀÔ·Â: ");
+        	System.out.println("\nï¿½Ð»ï¿½"+(i+1));
+            System.out.print("ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½: ");
             st.name=sc.nextLine();
-            System.out.print("ÇÐ°ú ÀÔ·Â: ");
+            System.out.print("ï¿½Ð°ï¿½ ï¿½Ô·ï¿½: ");
             st.department=sc.nextLine();
-            System.out.print("ÇÐ¹ø ÀÔ·Â: ");
+            System.out.print("ï¿½Ð¹ï¿½ ï¿½Ô·ï¿½: ");
             st.classnum=sc.nextLine();
-            System.out.print("ÇÐÁ¡Æò±Õ ÀÔ·Â: ");
+            System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½: ");
             st.averscore=sc.nextDouble();
             dept.put(st.classnum, st);
             sc.nextLine();
         }
-        System.out.print("\nÇÐ¹øÀ» ÀÔ·ÂÇÏ½Ã¿À : ");
+        System.out.print("\nï¿½Ð¹ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½ : ");
         Student st = dept.get(sc.next());
-        System.out.println("ÀÌ¸§ : "+st.name);
-        System.out.println("ÇÐ°ú : "+st.department);
-        System.out.println("ÇÐ¹ø : "+st.classnum);
-        System.out.println("ÇÐÁ¡Æò±Õ : "+st.averscore);
+        System.out.println("ï¿½Ì¸ï¿½ : "+st.name);
+        System.out.println("ï¿½Ð°ï¿½ : "+st.department);
+        System.out.println("ï¿½Ð¹ï¿½ : "+st.classnum);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : "+st.averscore);
         sc.close();
     }
 }

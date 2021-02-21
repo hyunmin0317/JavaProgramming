@@ -1,29 +1,29 @@
-package Problem02;
+package chap02.Problem02;
 
 import java.util.Scanner;
 
 public class IncludeCircle {
 	public static void main(String[] args) {
-		double x1, y1, r;	//¿ø Áß½ÉÀÇ ÁÂÇ¥¿Í ¹ÝÁö¸§
-		double x2, y2;		//Á¡ÀÇ ÁÂÇ¥
-		double distance;	//¿ø Áß½ÉÀÇ ÁÂÇ¥¿Í Á¡ÀÇ ÁÂÇ¥ÀÇ °Å¸®
+		double x1, y1, r;	//ï¿½ï¿½ ï¿½ß½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		double x2, y2;		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥
+		double distance;	//ï¿½ï¿½ ï¿½ß½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½Å¸ï¿½
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¿øÀÇ Áß½É°ú ¹ÝÁö¸§ ÀÔ·Â>> ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ß½É°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½>> ");
 		x1 = sc.nextDouble();
 		y1 = sc.nextDouble();
 		r = sc.nextDouble();
 	
-		System.out.print("Á¡ ÀÔ·Â>> ");
+		System.out.print("ï¿½ï¿½ ï¿½Ô·ï¿½>> ");
 		x2 = sc.nextDouble();
 		y2 = sc.nextDouble();
-		distance = Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));		//¿ø Áß½ÉÀÇ ÁÂÇ¥¿Í Á¡ÀÇ ÁÂÇ¥ÀÇ °Å¸®¸¦ ±¸ÇÔ
+		distance = Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));		//ï¿½ï¿½ ï¿½ß½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-		System.out.print("Á¡ ("+x2+", "+y2+")´Â ");
-		if (distance <= r)	//¿ø Áß½ÉÀÇ ÁÂÇ¥¿Í Á¡ÀÇ ÁÂÇ¥ÀÇ °Å¸®º¸´Ù ¹ÝÁö¸§ÀÇ ±æÀÌ°¡ ´õ Å©°Å³ª °°À»¶§
-			System.out.println("¿ø ¾È¿¡ ÀÖ´Ù.");
+		System.out.print("ï¿½ï¿½ ("+x2+", "+y2+")ï¿½ï¿½ ");
+		if (distance <= r)	//ï¿½ï¿½ ï¿½ß½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ Å©ï¿½Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println("ï¿½ï¿½ ï¿½È¿ï¿½ ï¿½Ö´ï¿½.");
 		else
-			System.out.println("¿ø ¹Û¿¡ ÀÖ´Ù.\"");
+			System.out.println("ï¿½ï¿½ ï¿½Û¿ï¿½ ï¿½Ö´ï¿½.\"");
 		sc.close();
 	}
 }

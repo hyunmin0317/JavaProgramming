@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 
 public class SalesRevenue {
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class SalesRevenue {
 		for (int i = 0; i<intArray.length; i++) 
 			for (int j = 0; j<intArray[i].length; j++)
 				sum += intArray[i][j];
-		System.out.println("Áö³­ 3³â°£ ¸ÅÃâ ÃÑ¾×Àº " + sum + "¿¬Æò±Õ ¸ÅÃâÀº "
-				+ sum/intArray.length+"ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ 3ï¿½â°£ ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾ï¿½ï¿½ï¿½ " + sum + "ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "
+				+ sum/intArray.length+"ï¿½Ô´Ï´ï¿½.");
 	}
 }

@@ -1,6 +1,6 @@
-package Practice08;
+package chap08.Practice08;
 import java.io.*;
-// ¿¹Á¦ 8-3 : FileReader¸¦ ÀÌ¿ëÇÑ ÅØ½ºÆ® ÆÄÀÏ ÀÐ±â - system.ini ÆÄÀÏ ÀÐ±â
+// ï¿½ï¿½ï¿½ï¿½ 8-3 : FileReaderï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±ï¿½ - system.ini ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±ï¿½
 public class FileReaderEx {
 	public static void main(String[] args) {
 		FileReader in = null;
@@ -12,7 +12,7 @@ public class FileReaderEx {
 			}
 			in.close();
 		} catch (IOException e) {
-			System.out.println("ÀÔÃâ·Â ¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 }

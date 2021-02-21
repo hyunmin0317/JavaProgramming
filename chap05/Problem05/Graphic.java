@@ -1,25 +1,25 @@
-package Problem05;
+package chap05.Problem05;
 import java.util.Scanner;
-// ½Ç½À 05-02
+// ï¿½Ç½ï¿½ 05-02
 class DObject {
     public void draw() {
     	System.out.println("DObject");
     }
 }
  
-class Line extends DObject {	// ½´ÆÛÅ¬·¡½º DObject¸¦ »ó¼Ó¹Þ¾Æ ¼­ºêÅ¬·¡½º LineÀ» »ý¼º
+class Line extends DObject {	// ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ DObjectï¿½ï¿½ ï¿½ï¿½Ó¹Þ¾ï¿½ ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ Lineï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public void draw() {
         System.out.println("Line");
     }
 }
  
-class Rect extends DObject {	// ½´ÆÛÅ¬·¡½º DObject¸¦ »ó¼Ó¹Þ¾Æ ¼­ºêÅ¬·¡½º RectÀ» »ý¼º
+class Rect extends DObject {	// ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ DObjectï¿½ï¿½ ï¿½ï¿½Ó¹Þ¾ï¿½ ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ Rectï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public void draw() {
         System.out.println("Rect");
     }
 }
  
-class Circle extends DObject {	// ½´ÆÛÅ¬·¡½º DObject¸¦ »ó¼Ó¹Þ¾Æ ¼­ºêÅ¬·¡½º CircleÀ» »ý¼º
+class Circle extends DObject {	// ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ DObjectï¿½ï¿½ ï¿½ï¿½Ó¹Þ¾ï¿½ ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ Circleï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public void draw() {
         System.out.println("Circle");
     }
@@ -32,59 +32,59 @@ public class Graphic {
         int count = 0;
         int select, add, delete;
         while (true) {
-        	System.out.print("»ðÀÔ(1), »èÁ¦(2), ¸ðµÎ º¸±â(3), Á¾·á(4)>> ");
+        	System.out.print("ï¿½ï¿½ï¿½ï¿½(1), ï¿½ï¿½ï¿½ï¿½(2), ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(3), ï¿½ï¿½ï¿½ï¿½(4)>> ");
             select = sc.nextInt();
             switch (select) {
-            case 1:	//»ðÀÔ
-                System.out.print("µµÇü Á¾·ù Line(1), Rect(2), Circle(3)>> ");
+            case 1:	//ï¿½ï¿½ï¿½ï¿½
+                System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Line(1), Rect(2), Circle(3)>> ");
                 add = sc.nextInt();
-                if (add == 1) {	// 1¹ø ¼±ÅÃ½Ã Line »ý¼º
+                if (add == 1) {	// 1ï¿½ï¿½ ï¿½ï¿½ï¿½Ã½ï¿½ Line ï¿½ï¿½ï¿½ï¿½
                     dObjects[count] = new Line();
                     count++;
-                } else if (add == 2) {	// 2¹ø ¼±ÅÃ½Ã Rect »ý¼º
+                } else if (add == 2) {	// 2ï¿½ï¿½ ï¿½ï¿½ï¿½Ã½ï¿½ Rect ï¿½ï¿½ï¿½ï¿½
                     dObjects[count] = new Rect();
                     count++;
-                } else if (add == 3) {	// 3¹ø ¼±ÅÃ½Ã Circle »ý¼º
+                } else if (add == 3) {	// 3ï¿½ï¿½ ï¿½ï¿½ï¿½Ã½ï¿½ Circle ï¿½ï¿½ï¿½ï¿½
                     dObjects[count] = new Circle();
                     count++;
-                } else {	// ¹üÀ§ ¹ÛÀÇ ¼ö ¼±ÅÃ
+                } else {	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                     System.out.println("Select 1~3");
                 }
                 break;
-            case 2:	// »èÁ¦
+            case 2:	// ï¿½ï¿½ï¿½ï¿½
                 if (count != 0) {
-                    System.out.print("»èÁ¦ÇÒ µµÇüÀÇ À§Ä¡>>");
+                    System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡>>");
                     delete = sc.nextInt();
-                    if (delete <= count) {	// »èÁ¦ÇÒ ÀÎµ¦½º°¡ ¹üÀ§ ¾ÈÀÏ¶§
-                        for (int i = delete - 1; i < count; i++) {	// »èÁ¦ÇÒ ÀÎµ¦½º·Î ÇÑÄ­¾¿ ÀÌµ¿
+                    if (delete <= count) {	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¶ï¿½
+                        for (int i = delete - 1; i < count; i++) {	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä­ï¿½ï¿½ ï¿½Ìµï¿½
                             dObjects[i] = dObjects[i + 1];
                         }
                         count--;
                     } 
-                    else {	// »èÁ¦ÇÒ ÀÎµ¦½º°¡ ¹üÀ§ ¹ÛÀÏ¶§
-                        System.out.println("»èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+                    else {	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¶ï¿½
+                        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
                     }
                 } 
-                else {	// ÀúÀåµÈ µµÇüÀÌ ¾øÀ»¶§
-                    System.out.println("»èÁ¦ÇÒ µµÇüÀÌ ¾ø½À´Ï´Ù.");
+                else {	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
                 }
                 break;
-            case 3:	// ¸ðµÎ º¸±â
-                if (count != 0) {	// ÀúÀåµÈ µµÇüÀÌ ÀÖÀ»¶§
-                    for (int i = 0; i < count; i++) {	// ÀúÀåµÈ ¸ðµç µµÇüÀ» Ãâ·Â
+            case 3:	// ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+                if (count != 0) {	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    for (int i = 0; i < count; i++) {	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
                         dObjects[i].draw();
                     }
                 } 
-                else {	// ÀúÀåµÈ µµÇüÀÌ ¾øÀ»¶§
-                    System.out.println("Ãâ·ÂÇÒ µµÇüÀÌ ¾ø½À´Ï´Ù.");
+                else {	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
                 }
                 break; 
-            case 4:	// Á¾·á
-                System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+            case 4:	// ï¿½ï¿½ï¿½ï¿½
+                System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
                 sc.close();
                 return;
-            default:	// ¹üÀ§ ¹Û ¼ýÀÚ¸¦ ÀÔ·ÂÇßÀ»¶§
-                System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù (1 ~ 4).");
+            default:	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½ (1 ~ 4).");
                 continue;
             }
         }

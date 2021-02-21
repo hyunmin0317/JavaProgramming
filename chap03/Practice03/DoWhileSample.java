@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 
 public class DoWhileSample {
 	public static void main(String[] args) {

@@ -1,9 +1,9 @@
-package Practice02;
+package chap02.Practice02;
 
 public class Practice02_06 {
 	public static void main (String[] args) {
 		int a = 3, b = 5;
 		
-		System.out.println("µÎ ¼öÀÇ Â÷´Â " + ((a>b)?(a-b):(b-a)));
+		System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ " + ((a>b)?(a-b):(b-a)));
 	}
 }

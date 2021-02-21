@@ -1,5 +1,5 @@
-package Practice04;
-// ¿¹Á¦4-6 : °¡ºñÁö ¹ß»ý
+package chap04.Practice04;
+// ï¿½ï¿½ï¿½ï¿½4-6 : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
 public class GarbageEx {
 	public static void main(String[] args) {
 		String a = new String("Good");
@@ -9,7 +9,7 @@ public class GarbageEx {
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println(c);
-		a = null;	//°¡ºñÁö ¹ß»ý
+		a = null;	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
 		d = c;
 		c = null;
 		System.out.println(a);

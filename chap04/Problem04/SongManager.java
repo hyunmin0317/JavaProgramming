@@ -1,9 +1,9 @@
-package Problem04;
-//½Ç½À04-02
+package chap04.Problem04;
+//ï¿½Ç½ï¿½04-02
 public class SongManager {
-	public static void main(String[] args) {	//³ë·¡ Á¤º¸ ÀÔ·Â
+	public static void main(String[] args) {	//ï¿½ë·¡ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½
 		String[] com = new String[] {"Benny Andersson", "Bjorn Ulvaeus", "Stig Anderson"};
 		Song song = new Song("Dancing Queen", "ABBA", "Arrival", com, 1976, 1);
-		song.show();	//show ¸Þ¼Òµå¸¦ ÅëÇØ ³ë·¡ Á¤º¸ Ãâ·Â
+		song.show();	//show ï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ ï¿½ë·¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	}
 }

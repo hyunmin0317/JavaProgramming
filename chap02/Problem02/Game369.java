@@ -1,4 +1,4 @@
-package Problem02;
+package chap02.Problem02;
 
 import java.util.Scanner;
 
@@ -8,18 +8,18 @@ public class Game369 {
 		int count = 0;
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½: ");
 		num = sc.nextInt();
 		
-		if (num%10==3 || num%10==6 || num%10==9)	//¼ýÀÚ num 1ÀÇ ÀÚ¸®°¡ 3, 6, 9Áß ÇÏ³ªÀÏ¶§
+		if (num%10==3 || num%10==6 || num%10==9)	//ï¿½ï¿½ï¿½ï¿½ num 1ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 3, 6, 9ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½Ï¶ï¿½
 			count++;
-		if (num/10==3 || num/10==6 || num/10==9)	//¼ýÀÚ num 10ÀÇ ÀÚ¸®°¡ 3, 6, 9Áß ÇÏ³ªÀÏ¶§
+		if (num/10==3 || num/10==6 || num/10==9)	//ï¿½ï¿½ï¿½ï¿½ num 10ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 3, 6, 9ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½Ï¶ï¿½
 			count++;
 		
-		if (count==1)	//3, 6, 9°¡ 1°³ ÀÖÀ»¶§
-			System.out.println("¹Ú¼öÂ¦");
-		if (count==2)	//3, 6, 9°¡ 2°³ ÀÖÀ»¶§
-			System.out.println("¹Ú¼öÂ¦Â¦");
+		if (count==1)	//3, 6, 9ï¿½ï¿½ 1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println("ï¿½Ú¼ï¿½Â¦");
+		if (count==2)	//3, 6, 9ï¿½ï¿½ 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println("ï¿½Ú¼ï¿½Â¦Â¦");
 		sc.close();
 	}
 }

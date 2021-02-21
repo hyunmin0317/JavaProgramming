@@ -1,14 +1,14 @@
-package Problem05;
-// ½Ç½À 05-04
+package chap05.Problem05;
+// ï¿½Ç½ï¿½ 05-04
 abstract class MyPoint {
 	int x;
 	int y;
-	public MyPoint(int x, int y) {	// »ý¼ºÀÚ »ý¼º
+	public MyPoint(int x, int y) {	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	    this.x = x; this.y = y;
 	}
-	protected abstract void move(int x, int y);	// Ãß»ó¸Þ¼Òµå move ¼±¾ð
-	protected abstract void reverse();	// Ãß»ó¸Þ¼Òµå reverse ¼±¾ð
-	protected void show() {	// Ãß»ó¸Þ¼Òµå show ¼±¾ð
+	protected abstract void move(int x, int y);	// ï¿½ß»ï¿½Þ¼Òµï¿½ move ï¿½ï¿½ï¿½ï¿½
+	protected abstract void reverse();	// ï¿½ß»ï¿½Þ¼Òµï¿½ reverse ï¿½ï¿½ï¿½ï¿½
+	protected void show() {	// ï¿½ß»ï¿½Þ¼Òµï¿½ show ï¿½ï¿½ï¿½ï¿½
 	    System.out.print(x + ", "+ y);
 	}
 }
@@ -19,16 +19,16 @@ public class MyColorPoint extends MyPoint{
 		super(x, y);
 		this.c = c;
 	}
-	public void move(int x, int y) {	// »õ·Î¿î x, y À§Ä¡·Î ÀÌµ¿
+	public void move(int x, int y) {	// ï¿½ï¿½ï¿½Î¿ï¿½ x, y ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½
 		this.x = x;
 		this.y = y;
 	}
-	public void reverse() {	// (x, y)¿¡¼­ (y, x)·Î À§Ä¡ º¯°æ
+	public void reverse() {	// (x, y)ï¿½ï¿½ï¿½ï¿½ (y, x)ï¿½ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½
 		int z = x;
 		x = y;
 		y = z;
 	}
-	public void show() {	//ÀúÀåµÈ ÁÂÇ¥¸¦ Ãâ·Â
+	public void show() {	//ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½
 		super.show();
 		System.out.println(", "+c);
 	}

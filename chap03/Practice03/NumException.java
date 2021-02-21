@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 
 public class NumException {
 	public static void main(String[] args) {
@@ -6,10 +6,10 @@ public class NumException {
 		try {
 			for (int i = 0; i<stringNumber.length; i++) {
 				int j = Integer.parseInt(stringNumber[i]);
-				System.out.println("¼ýÀÚ·Î º¯È¯µÈ °ªÀº"+j);
+				System.out.println("ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½"+j);
 			}
 		} catch(NumberFormatException e) {
-			System.out.println("Á¤¼ö·Î º¯È¯ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 	}
 }

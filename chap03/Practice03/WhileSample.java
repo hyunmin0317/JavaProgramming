@@ -1,4 +1,4 @@
-package Practice03;
+package chap03.Practice03;
 import java.util.Scanner;
 
 public class WhileSample {
@@ -11,7 +11,7 @@ public class WhileSample {
 			sum += i;
 			n++;
 		}
-		System.out.println("ÀÔ·ÂµÈ ¼öÀÇ °³¼ö´Â" +n +"°³ ÀÌ¸ç Æò±ÕÀº " + sum / n + "ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½Ô·Âµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" +n +"ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ " + sum / n + "ï¿½Ô´Ï´ï¿½.");
 		sc.close();
 	}
 }

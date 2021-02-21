@@ -1,5 +1,5 @@
-package Problem04;
-//½Ç½À04-02
+package chap04.Problem04;
+//ï¿½Ç½ï¿½04-02
 public class Song {
 	String title;
 	String artist;
@@ -8,7 +8,7 @@ public class Song {
 	int year;
 	int track;
 	
-	public Song() {}	//»ý¼ºÀÚ ÁöÁ¤
+	public Song() {}	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public Song(String title, String artist, String album, String composer[], int year, int track) {
 		this.title = title;
 		this.artist = artist;
@@ -17,13 +17,13 @@ public class Song {
 		this.year = year;
 		this.track = track;
 	}
-	void show() {	//³ë·¡Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ¸Þ¼Òµå
-		System.out.println("³ë·¡ Á¦¸ñ: "+title);
-		System.out.println("°¡¼ö: "+artist);
-		System.out.println("¾Ù¹ü Á¦¸ñ: "+album);
+	void show() {	//ï¿½ë·¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
+		System.out.println("ï¿½ë·¡ ï¿½ï¿½ï¿½ï¿½: "+title);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½: "+artist);
+		System.out.println("ï¿½Ù¹ï¿½ ï¿½ï¿½ï¿½ï¿½: "+album);
 		for(int i=0; i<composer.length; i++)
-			System.out.println("ÀÛ°î°¡: "+composer[i]);
-		System.out.println("¹ßÇ¥ ¿¬µµ: "+year);
-		System.out.println("Æ®·¢ ¹øÈ£: "+track);
+			System.out.println("ï¿½Û°î°¡: "+composer[i]);
+		System.out.println("ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½ï¿½: "+year);
+		System.out.println("Æ®ï¿½ï¿½ ï¿½ï¿½È£: "+track);
 	}
 }

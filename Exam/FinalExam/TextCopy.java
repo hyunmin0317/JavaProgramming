@@ -1,4 +1,4 @@
-package FinalExam;
+package Exam.FinalExam;
 import java.io.*;
 
 public class TextCopy {
@@ -13,11 +13,11 @@ public class TextCopy {
             while((c = f1.read())!=-1)
                 f2.write(c);
             
-            System.out.println("º¹»ç°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+            System.out.println("ï¿½ï¿½ï¿½ç°¡ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
             f1.close();
             f2.close();
         } catch (IOException e) {
-            System.out.println("ÆÄÀÏ ÀÔÃâ·Â ¿À·ù");
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
         }
 	}
 }

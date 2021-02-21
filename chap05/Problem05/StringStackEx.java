@@ -1,34 +1,34 @@
-package Problem05;
+package chap05.Problem05;
 import java.util.Scanner;
-// ½Ç½À 05-03
-interface Stack{	// interface Stack ¼±¾ð
+// ï¿½Ç½ï¿½ 05-03
+interface Stack{	// interface Stack ï¿½ï¿½ï¿½ï¿½
     int length();
     Object pop();
     boolean push(Object ob);
 }
  
-class StringStack implements Stack{	// interface StringStack±¸Çö
+class StringStack implements Stack{	// interface StringStackï¿½ï¿½ï¿½ï¿½
     private String stack[];
     private int top;
-    StringStack(int length){	// »ý¼ºÀÚ ¼±¾ð
+    StringStack(int length){	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         stack = new String[length];
         top = -1;
     }
-    public int length(){	// ½ºÅÃÀÇ ±æÀÌ ¹ÝÈ¯
+    public int length(){	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
         return stack.length;
     }
-    public Object pop(){	// ½ºÅÃÀÇ pop ¿¬»ê
-        if(top == -1) return "ºñ¾îÀÖ´Â ½ºÅÃ";
+    public Object pop(){	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ pop ï¿½ï¿½ï¿½ï¿½
+        if(top == -1) return "ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½";
         return stack[top--];
     }
-    public boolean push(Object ob){	// ½ºÅÃÀÇ push ¿¬»ê
+    public boolean push(Object ob){	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ push ï¿½ï¿½ï¿½ï¿½
         if(top == stack.length) 
         	return false;
         stack[++top] = (String)ob;
         return true;
     }
-    public void printStack(){	// ½ºÅÃÀÇ ¸ðµç °ªÀ» Ãâ·Â
-        System.out.print("½ºÅÃ [");
+    public void printStack(){	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+        System.out.print("ï¿½ï¿½ï¿½ï¿½ [");
         for(int i=0; i<stack.length; i++){
             System.out.print(stack[i]);
         }
@@ -40,11 +40,11 @@ public class StringStackEx {
     public static void main(String[] args) {
         int n;
         Scanner sc = new Scanner(System.in);
-        System.out.print("½ºÅÃÀÇ ±æÀÌ: ");
+        System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ");
         n = sc.nextInt();
     	StringStack stack1 = new StringStack(n);   	
     	for(int i = 0; i < n; i++) {
-    		System.out.print("¹®ÀÚ¿­"+(i+1)+" ÀÔ·Â: ");
+    		System.out.print("ï¿½ï¿½ï¿½Ú¿ï¿½"+(i+1)+" ï¿½Ô·ï¿½: ");
     		stack1.push(sc.next());
     	}
         stack1.printStack();

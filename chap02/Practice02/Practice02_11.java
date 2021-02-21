@@ -1,4 +1,4 @@
-package Practice02;
+package chap02.Practice02;
 
 import java.util.Scanner;
 
@@ -28,7 +28,7 @@ public class Practice02_11 {
 				grade = 'F';
 				break;
 			}
-			System.out.println("ÇÐÁ¡Àº " + grade + "ÀÔ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + grade + "ï¿½Ô´Ï´ï¿½.");
 		}
 		sc.close();
 	}

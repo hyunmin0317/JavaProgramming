@@ -1,25 +1,25 @@
-package Problem03;
+package chap03.Problem03;
 import java.util.Scanner;
 
 public class Pair {
 	public static void main(String[] args) {
-		String course [] = {"java", "C++", "HTML5", "ÄÄÇ»ÅÍ±¸Á¶", "¾Èµå·ÎÀÌµå"};
+		String course [] = {"java", "C++", "HTML5", "ï¿½ï¿½Ç»ï¿½Í±ï¿½ï¿½ï¿½", "ï¿½Èµï¿½ï¿½ï¿½Ìµï¿½"};
 		int score[] = {95, 88, 76, 62, 55};
 		int i;
 		Scanner sc = new Scanner(System.in);
 		while (true) {
-			System.out.print("°ú¸ñ ÀÌ¸§>> ");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½>> ");
 			String str = sc.next();
-			if (str.equals("±×¸¸"))
+			if (str.equals("ï¿½×¸ï¿½"))
 				break;
 			for (i = 0; i<5; i++) {
 				if (course[i].equals(str)) {
-					System.out.println(course[i]+"ÀÇ Á¡¼ö´Â  "+score[i]);
+					System.out.println(course[i]+"ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  "+score[i]);
 					break;
 				}
 			}
 			if (i == 5)
-				System.out.println("¾ø´Â °ú¸ñÀÔ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 		}
 		sc.close();		
 	}

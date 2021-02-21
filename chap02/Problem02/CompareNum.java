@@ -1,4 +1,4 @@
-package Problem02;
+package chap02.Problem02;
 
 import java.util.Scanner;
 
@@ -6,14 +6,14 @@ public class CompareNum {
 	public static void main(String[] args) {
 		int num;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("2ÀÚ¸® Á¤¼ö(10~99)¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.print("Á¤¼ö ÀÔ·Â: ");
+		System.out.println("2ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½(10~99)ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½: ");
 		num = sc.nextInt();
 		
-		if(num/10 == num%10)	//2ÀÚ¸® Á¤¼ö numÀÇ 10ÀÇ ÀÚ¸®¿Í 1ÀÇ ÀÚ¸® ¼ýÀÚ°¡ °°À»¶§
-			System.out.println("10ÀÇ ÀÚ¸®¿Í 1ÀÇ ÀÚ¸®°¡ °°½À´Ï´Ù.");
+		if(num/10 == num%10)	//2ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ numï¿½ï¿½ 10ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 1ï¿½ï¿½ ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println("10ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 1ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		else
-			System.out.println("10ÀÇ ÀÚ¸®¿Í 1ÀÇ ÀÚ¸®°¡ ´Ù¸¨´Ï´Ù.");
+			System.out.println("10ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 1ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ï¿½Ï´ï¿½.");
 		sc.close();
 	}
 }

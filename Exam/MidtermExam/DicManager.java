@@ -1,15 +1,15 @@
-package MidtermExam;
+package Exam.MidtermExam;
 import java.util.Scanner;
-// Áß°£°í»ç 6¹ø ¹®Á¦
+// ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ 6ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 class Dictionary {
-	private static String[] kor = {"»ç¶û", "¾Æ±â", "µ·", "¹Ì·¡", "Èñ¸Á"};
+	private static String[] kor = {"ï¿½ï¿½ï¿½", "ï¿½Æ±ï¿½", "ï¿½ï¿½", "ï¿½Ì·ï¿½", "ï¿½ï¿½ï¿½"};
 	private static String[] eng = {"love", "baby", "money", "future", "hope"};
-	public static String kor2Eng(String word){	//°Ë»öÇÏ´Â ´Ü¾îÀÇ ¿µ´Ü¾î¸¦ Ãâ·ÂÇÏ´Â ¸Þ¼Òµå
+	public static String kor2Eng(String word){	//ï¿½Ë»ï¿½ï¿½Ï´ï¿½ ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ü¾î¸¦ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
 		int i;
 		for(i=0; i<kor.length; i++)
 			if(kor[i].equals(word))
 				return eng[i];
-		return "ÀúÀÇ »çÀü¿¡ ¾ø½À´Ï´Ù.";
+		return "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.";
 	}
 }
 
@@ -17,16 +17,16 @@ public class DicManager {
 	public static void main(String[] args) {
 		String word = " ";
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇÑ¿µ ´Ü¾î ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½Ñ¿ï¿½ ï¿½Ü¾ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½Ô´Ï´ï¿½.");
 		while(true) {
-			System.out.print("ÇÑ±Û ´Ü¾î? ");
+			System.out.print("ï¿½Ñ±ï¿½ ï¿½Ü¾ï¿½? ");
 			word = sc.next();
-			if(word.equals("±×¸¸")) {
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			if(word.equals("ï¿½×¸ï¿½")) {
+				System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 				break;
 			}
 			else
-				System.out.println(word+"´Â "+Dictionary.kor2Eng(word));	
+				System.out.println(word+"ï¿½ï¿½ "+Dictionary.kor2Eng(word));	
 		}
 		sc.close();
 	}

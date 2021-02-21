@@ -1,13 +1,13 @@
-package Practice03;
+package chap03.Practice03;
 
 public class ForeachEx {
 	public static void main(String[] args) {
 		int[] num = {1,2,3,4,5};
-		String names[] = {"µþ±â", "¼ö¹Ú", "¹Ù³ª³ª", "»ç°ú", "Æ÷µµ"};
+		String names[] = {"ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½Ù³ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½"};
 		int sum = 0;	
 		for (int k : num)
 			sum+=k;
-		System.out.println("ÇÕÀº" + sum +"ÀÌ´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½" + sum +"ï¿½Ì´ï¿½.");
 		for (String s : names)
 			System.out.print(s + " ");
 		System.out.println();

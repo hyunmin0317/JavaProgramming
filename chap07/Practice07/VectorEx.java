@@ -1,6 +1,6 @@
-package Practice07;
+package chap07.Practice07;
 import java.util.Vector;
-// ¿¹Á¦ 7-1 : Á¤¼ö °ª¸¸ ´Ù·ç´Â Vector<Integer>
+// ï¿½ï¿½ï¿½ï¿½ 7-1 : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù·ï¿½ï¿½ Vector<Integer>
 public class VectorEx {
 	public static void main(String[] args) {
 		int i, n;
@@ -11,8 +11,8 @@ public class VectorEx {
 		v.add(-1);
 		v.add(2, 100);
 
-		System.out.println("º¤ÅÍ ³»ÀÇ ¿ä¼Ò °´Ã¼ ¼ö : " + v.size()); 
-		System.out.println("º¤ÅÍÀÇ ÇöÀç ¿ë·® : " + v.capacity()); 
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ : " + v.size()); 
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ë·® : " + v.capacity()); 
 		
 		for(i=0; i<v.size(); i++) {
 			n = v.get(i);
@@ -23,6 +23,6 @@ public class VectorEx {
 			n = v.elementAt(i);
 			sum += n;
 		}
-		System.out.println("º¤ÅÍ¿¡ ÀÖ´Â Á¤¼ö ÇÕ : " + sum);
+		System.out.println("ï¿½ï¿½ï¿½Í¿ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : " + sum);
 	}
 }
