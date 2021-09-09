@@ -1,4 +1,4 @@
-package chap02;
+package chap02.practice01;
 
 public class Book {
 	private String author;

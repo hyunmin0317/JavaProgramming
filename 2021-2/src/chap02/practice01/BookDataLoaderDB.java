@@ -1,4 +1,4 @@
-package chap02;
+package chap02.practice01;
 
 import java.util.List;
 
