@@ -1,4 +1,4 @@
-package chap02.practice01;
+package exercises.week02;
 
 import java.util.List;
 

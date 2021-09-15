@@ -1,3 +1,5 @@
+package assignments.assignment01;
+
 public abstract class DocConverter {
     private String ext;
 

@@ -1,3 +1,4 @@
+package assignments.assignment01;
 
 public class EngSpellChecker implements ISpellChecker {
 	@Override

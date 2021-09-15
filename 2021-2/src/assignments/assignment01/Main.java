@@ -1,3 +1,5 @@
+package assignments.assignment01;
+
 public class Main {
     public static void main(String[] args) {
         WordProcessor wp = new WordProcessor("new doc");

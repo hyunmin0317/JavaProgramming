@@ -1,4 +1,4 @@
-package chap02.practice02;
+package exercises.week02;
 
 public class CDManager {
 	public static void main(String[] args) {

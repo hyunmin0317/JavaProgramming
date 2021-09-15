@@ -1,4 +1,4 @@
-package chap02.practice02;
+package exercises.week02;
 
 interface IDBLoader {
 	public String getName();

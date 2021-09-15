@@ -1,3 +1,5 @@
+package assignments.assignment01;
+
 class OdtDocConverter extends DocConverter {
 	public OdtDocConverter() {
 		super("odt");

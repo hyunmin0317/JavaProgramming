@@ -1,3 +1,5 @@
+package assignments.assignment01;
+
 class PdfDocConverter extends DocConverter {
 	public PdfDocConverter() {
 		super("pdf");

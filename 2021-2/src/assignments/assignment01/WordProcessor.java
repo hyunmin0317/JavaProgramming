@@ -1,3 +1,5 @@
+package assignments.assignment01;
+
 import java.util.Map;
 import java.util.HashMap;
 

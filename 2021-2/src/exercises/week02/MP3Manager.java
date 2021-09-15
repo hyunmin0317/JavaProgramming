@@ -1,4 +1,4 @@
-package chap02.practice02;
+package exercises.week02;
 
 public class MP3Manager {
 	public static void main(String[] args) {
