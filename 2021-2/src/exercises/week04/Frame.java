@@ -9,8 +9,13 @@ public class Frame {
 		f.setSize(600, 400);
 		
 		Container pane = f.getContentPane();
-		JButton b = new JButton("hello");
-		pane.add(b);
+		JPanel p = new JPanel();
+		JButton b1 = new JButton("hello1");
+		JButton b2 = new JButton("hello2");
+		
+		p.add(b1);
+		p.add(b2);
+		pane.add(p);
 		
 		f.setVisible(true);
 		f.setTitle("Main");
