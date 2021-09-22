@@ -13,6 +13,7 @@ public class Frame {
 		JButton b1 = new JButton("hello1");
 		JButton b2 = new JButton("hello2");
 		
+		b1.addActionListener(new ButtonListener());
 		p.add(b1);
 		p.add(b2);
 		pane.add(p);
