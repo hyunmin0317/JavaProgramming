@@ -9,6 +9,10 @@ public class TextFieldWindow extends FrameWindow {
     public TextFieldWindow(String title, int x, int y, int width, int height) {
         super(title, x, y, width, height);
     }
+    
+    public void display() {		// 값을 보여주는 메서드 오버로딩
+    	updateText(Integer.toString(primeNumber));
+	}
 
     public void updateText(String msg) {
         textField.setText(msg);

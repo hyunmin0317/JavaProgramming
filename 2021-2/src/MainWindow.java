@@ -6,8 +6,10 @@ public class MainWindow extends FrameWindow implements ActionListener {
     private static final String MAIN_TITLE = "Main Window";
     private static final String TEXTFIELD_WINDOW_TITLE = "TextField Window";
     private static final String LABEL_WINDOW_TITLE = "Label Window";
-    private static final String TEXTFIELD_OBSERVER_BUTTON_TITLE = "Update TextField Window Observer";
-    private static final String LABEL_OBSERVER_BUTTON_TITLE = "Update Label Window Observer";
+    private static final String TEXTFIELD_OBSERVER_BUTTON_TITLE = "Add TextField Window Observer";
+    private static final String LABEL_OBSERVER_BUTTON_TITLE = "Add Label Window Observer";
+    private static final String TEXTFIELD_OBSERVER_BUTTON_TITLE2 = "Remove TextField Window Observer";
+    private static final String LABEL_OBSERVER_BUTTON_TITLE2 = "Remove Label Window Observer";
     private static final String STOP_THREAD_BUTTON_TITLE = "Stop Generating Prime Number";
     private static final int X = 250;
     private static final int Y = 100;
@@ -35,19 +37,19 @@ public class MainWindow extends FrameWindow implements ActionListener {
                 System.exit(0);
             }
         });
-
-        primeThread = new PrimeObservableThread(); // °´Ã¼ »ı¼º
-        
-        primeThread.run();  // ¼Ò¼ö »ı¼º ½ÃÀÛ. ÀÌ ÇÔ¼ö°¡ ½ÇÇàµÈ ÈÄ¿¡´Â stopButtonÀÌ ´­¸®±â Àü±îÁö ¹«ÇÑ ¹İº¹µÊ
+        primeThread = new PrimeObservableThread(); 		// ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
+        primeThread.registerObserver(textFieldWindow);	// primeThreadì— textFieldWindow ì˜µì €ë²„ ì¶”ê°€
+        primeThread.registerObserver(labelWindow);		// primeThreadì— textFieldWindow ì˜µì €ë²„ ì¶”ê°€
+        primeThread.run();  // ï¿½Ò¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ä¿ï¿½ï¿½ï¿½ stopButtonï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½İºï¿½ï¿½ï¿½  
     }
 
     public JPanel createPanel(int width, int height) {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setPreferredSize(new Dimension(width, height));
-        updateTextFieldObserverButton = createButton(TEXTFIELD_OBSERVER_BUTTON_TITLE, this, width, height);
+        updateTextFieldObserverButton = createButton(TEXTFIELD_OBSERVER_BUTTON_TITLE2, this, width, height);
         panel.add(updateTextFieldObserverButton);
-        updateLabelObserverButton = createButton(LABEL_OBSERVER_BUTTON_TITLE, this, width, height);
+        updateLabelObserverButton = createButton(LABEL_OBSERVER_BUTTON_TITLE2, this, width, height);
         panel.add(updateLabelObserverButton);
         stopButton = createButton(STOP_THREAD_BUTTON_TITLE, this, width, height);
         panel.add(stopButton);
@@ -56,12 +58,23 @@ public class MainWindow extends FrameWindow implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == updateTextFieldObserverButton) {
-            textFieldWindow.updateText("" + primeThread.getPrimeNumber());
-            updateTextFieldObserverButton.setText(TEXTFIELD_OBSERVER_BUTTON_TITLE + " 2");
+        if (e.getSource() == updateTextFieldObserverButton) {	// updateTextFieldObserverButton ë²„íŠ¼ í´ë¦­ ì‹œ
+        	if (updateTextFieldObserverButton.getText() == TEXTFIELD_OBSERVER_BUTTON_TITLE) {
+        		primeThread.registerObserver(textFieldWindow);	// primeThreadì— textFieldWindow ì˜µì €ë²„ ì¶”ê°€
+            	updateTextFieldObserverButton.setText(TEXTFIELD_OBSERVER_BUTTON_TITLE2);
+        	} else {
+        		primeThread.removeObserver(textFieldWindow);	// primeThreadì— textFieldWindow ì˜µì €ë²„ ì‚­ì œ
+            	updateTextFieldObserverButton.setText(TEXTFIELD_OBSERVER_BUTTON_TITLE);
+        	}
         }
-        else if (e.getSource() == updateLabelObserverButton) {
-            labelWindow.updateText("" + primeThread.getPrimeNumber());
+        else if (e.getSource() == updateLabelObserverButton) {	// updateLabelObserverButton ë²„íŠ¼ í´ë¦­ ì‹œ
+        	if (updateLabelObserverButton.getText() == LABEL_OBSERVER_BUTTON_TITLE) {
+        		primeThread.registerObserver(labelWindow);		// primeThreadì— textFieldWindow ì˜µì €ë²„ ì¶”ê°€
+            	updateLabelObserverButton.setText(LABEL_OBSERVER_BUTTON_TITLE2);
+        	} else {
+        		primeThread.removeObserver(labelWindow);		// primeThreadì— textFieldWindow ì˜µì €ë²„ ì‚­ì œ
+            	updateLabelObserverButton.setText(LABEL_OBSERVER_BUTTON_TITLE);
+        	}
         }
         else if (e.getSource() == stopButton) {
             primeThread.stopRunning();
@@ -77,7 +90,7 @@ public class MainWindow extends FrameWindow implements ActionListener {
         button.setPreferredSize(buttonDimension);
         return button;
     }
-
+    
     public static void main(String[] args) {
         MainWindow mainWindow = new MainWindow(MainWindow.MAIN_TITLE);
     }

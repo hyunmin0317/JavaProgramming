@@ -2,36 +2,26 @@ import javax.swing.*;
 import java.awt.event.WindowListener;
 import java.util.ArrayList;
 
-public abstract class FrameWindow implements Subject {
+public abstract class FrameWindow implements Observer {
     private JFrame frame;
     
-    private ArrayList observers;
-    private int primeNumber;
-   
-    public void registerObserver(Observer o) {
-		observers.add(o);
+    public int primeNumber;
+    private Observable observable;
+    
+    @Override
+	public void update(int primeNumber) {	// 값을 업데이트하는 메서드 오버라이딩
+		this.primeNumber = primeNumber;
+		display();	
 	}
 	
-	public void removeObserver(Observer o) {
-		int i = observers.indexOf(o);
-		if (i >= 0) {
-			observers.remove(i);
-		}
+	public void display() {		// 값을 보여주는 메서드
+		System.out.println(primeNumber);
 	}
-
-	@Override
-	public void notifyObservers() {
-		for (int i = 0; i < observers.size(); i++) {
-			Observer observer = (Observer) observers.get(i);
-			observer.update(primeNumber);
-		}
-	}
-
+    
     public FrameWindow(String title, int x, int y, int width, int height) {
         frame = createWindow(title, x, y, width, height);
-        observers = new ArrayList();
     }
-
+    
     public FrameWindow(String title, int x, int y, int width, int height, WindowListener lis) {
         frame = createWindow(title, x, y, width, height);
         frame.addWindowListener(lis);
