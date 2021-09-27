@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-
-public class PrimeObservableThread implements Runnable {
+public class PrimeObservableThread implements Runnable, Observer {
     private static final int SLEEPTIME = 500;
 
     private int primeNumber;
@@ -61,4 +59,10 @@ public class PrimeObservableThread implements Runnable {
     public void run() {
         generatePrimeNumber();
     }
+
+	@Override
+	public void update(int primeNumber) {
+		// TODO Auto-generated method stub
+		
+	}
 }

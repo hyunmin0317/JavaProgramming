@@ -1,5 +1,6 @@
 package exercises.week04;
-public class CurrentConditionsDisplay implements Observer, DisplayElement {
+
+public class CurrentConditionsDisplay implements Observers, DisplayElement {
 	private float temperature;
 	private float humidity;
 	private Subject weatherData;

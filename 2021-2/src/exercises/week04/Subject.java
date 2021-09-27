@@ -1,8 +1,8 @@
 package exercises.week04;
 
 public interface Subject {
-	public void registerObserver(Observer o);
-	public void removeObserver(Observer o);
+	public void registerObserver(Observers o);
+	public void removeObserver(Observers o);
 	public void notifyObservers();
 }
 
