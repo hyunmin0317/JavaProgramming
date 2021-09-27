@@ -1,6 +1,5 @@
 package exercises.week04;
-
-public class CurrentConditionsDisplay implements Observers, DisplayElement {
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private float temperature;
 	private float humidity;
 	private Subject weatherData;
@@ -14,11 +13,11 @@ public class CurrentConditionsDisplay implements Observers, DisplayElement {
 		this.temperature = temperature;
 		this.humidity = humidity;
 		display();	
-	}
+		}
 	
 	public void display() {
 		System.out.println("Current conditions: " 
 		+ temperature + "F degrees and " + humidity 
 		+ "% humidity");
-	}
+		}
 }

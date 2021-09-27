@@ -1,7 +1,4 @@
 import javax.swing.*;
-
-import exercises.week04.Observer;
-
 import java.awt.event.WindowListener;
 import java.util.ArrayList;
 
