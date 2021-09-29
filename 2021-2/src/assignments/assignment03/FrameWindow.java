@@ -1,3 +1,5 @@
+package assignments.assignment03;
+
 import javax.swing.*;
 import java.awt.event.WindowListener;
 import java.util.ArrayList;

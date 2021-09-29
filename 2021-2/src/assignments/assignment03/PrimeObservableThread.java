@@ -1,3 +1,5 @@
+package assignments.assignment03;
+
 import java.util.ArrayList;
 
 public class PrimeObservableThread implements Runnable, Observable {

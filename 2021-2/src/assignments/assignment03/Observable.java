@@ -1,3 +1,5 @@
+package assignments.assignment03;
+
 // 옵저버를 관리하는 인터페이스
 public interface Observable {
 	public void registerObserver(Observer o);	// 옵저버를 추가하는 메서드
