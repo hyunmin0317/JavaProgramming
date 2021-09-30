@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
+import java.util.*;	// 삭제
 
 public class MainWindow extends FrameWindow {
     private static final String MAIN_TITLE = "Main Window";
