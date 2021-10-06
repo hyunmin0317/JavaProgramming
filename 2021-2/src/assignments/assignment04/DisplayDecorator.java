@@ -1,3 +1,5 @@
+package assignments.assignment04;
+
 import javax.swing.*;
 
 public abstract class DisplayDecorator extends Display {
