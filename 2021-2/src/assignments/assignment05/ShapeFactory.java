@@ -1,3 +1,5 @@
+package assignments.assignment05;
+
 import java.awt.Point;
 
 public interface ShapeFactory {
