@@ -3,7 +3,7 @@ package exercises.week07;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Iterators{
+public class IteratorPractice{
 	public static void main(String[] args) {
 		ArrayList<String> cities = new ArrayList<String>();
 		Iterator iter;
