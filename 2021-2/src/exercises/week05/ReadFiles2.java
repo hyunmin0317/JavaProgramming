@@ -11,6 +11,7 @@ public class ReadFiles2 {
 			new FileReader("readme.txt"));
 			String line = readme.readLine();
 			System.out.println("line = " + line);
+			line = readme.readLine();
 			}
 			catch (Exception e) {
 			e.printStackTrace();
