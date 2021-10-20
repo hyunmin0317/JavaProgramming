@@ -1,4 +1,4 @@
-package midterm2019;
+package exam.midterm2019;
 
 public interface Observer {
 	void updateText(String s);

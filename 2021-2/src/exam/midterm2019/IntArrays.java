@@ -1,4 +1,4 @@
-package midterm2019;
+package exam.midterm2019;
 
 import java.util.Arrays;
 
