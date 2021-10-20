@@ -8,7 +8,7 @@ public class ReadFiles2 {
 		try {
 			BufferedReader readme 
 			= new BufferedReader(
-			new FileReader("readme.txt"));
+			new FileReader("read.txt"));
 			String line = readme.readLine();
 			System.out.println("line = " + line);
 			line = readme.readLine();

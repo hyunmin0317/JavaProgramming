@@ -7,7 +7,7 @@ public class ReadFiles {
 	public static void main(String[] args) {
 		try {
 			LineNumberReader readme = new LineNumberReader(
-			new FileReader("readme.txt"));
+			new FileReader("read.txt"));
 			String line = readme.readLine();
 			System.out.println("line " + 
 			readme.getLineNumber() + " = " + line);
