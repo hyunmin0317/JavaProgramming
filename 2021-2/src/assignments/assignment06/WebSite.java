@@ -1,3 +1,5 @@
+package assignments.assignment06;
+
 public class WebSite {
 
 	public static void main(String[] args) {

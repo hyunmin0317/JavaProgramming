@@ -1,3 +1,5 @@
+package assignments.assignment06;
+
 import java.util.List;
 
 public interface PasswordDAO {

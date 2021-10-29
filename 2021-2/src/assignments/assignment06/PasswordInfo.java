@@ -1,3 +1,5 @@
+package assignments.assignment06;
+
 public class PasswordInfo {
 	private String url;
 	private String id;
