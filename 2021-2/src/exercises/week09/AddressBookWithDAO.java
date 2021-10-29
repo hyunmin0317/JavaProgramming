@@ -3,7 +3,8 @@ package exercises.week09;
 public class AddressBookWithDAO {
 	public static void main(String[] args) {
 		Person p;
-		PersonDao personDao = new PersonDaoList();	// PersonDaoImpl()
+//		PersonDao personDao = new PersonDaoList();	// PersonDaoImpl()
+		PersonDao personDao = new PersonDaoImpl();
 		System.out.println("--- inserting...");
 
 		p = new Person("Seonyoung Kim", "1 Hongji Dong");
@@ -25,7 +26,7 @@ public class AddressBookWithDAO {
 
 		if (p != null) {
 			System.out.println(p);
-			}
+		}
 
 		System.out.println("--- deleting...");
 		personDao.delete(1); // or personDao.delete(p);
