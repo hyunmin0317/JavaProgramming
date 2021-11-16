@@ -1,3 +1,5 @@
+package assignments.assignment08;
+
 public class Calculator {
     int operand1;
     int operand2;
