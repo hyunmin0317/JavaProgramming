@@ -1,18 +1,18 @@
 package exercises.week11;
 
-public class LightOnCommand implements Command {
+public class LightOffCommand implements Command {
 	Light light; // light 객체가 Receiver가 됨
 
-	public LightOnCommand(Light light) {
+	public LightOffCommand(Light light) {
 		this.light = light;
 	}
 
 	public void execute() {
-		light.on();
+		light.off();
 	}
 
 	@Override
 	public void undo() {
-		light.off();
+		light.on();
 	}
 }
