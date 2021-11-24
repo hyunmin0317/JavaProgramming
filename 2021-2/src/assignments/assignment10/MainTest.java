@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package assignments.assignment10;
 
 public class MainTest {
 	public static void main(String[] args) {
