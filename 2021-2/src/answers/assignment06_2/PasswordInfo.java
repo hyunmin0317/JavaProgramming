@@ -1,22 +1,21 @@
 package answers.assignment06_2;
 
-public class PasswordInfo {
-	private String url;
+public class PasswordInfo implements DBData<String> {
+	private String key;
 	private String id;
 	private String password;
 	
-	PasswordInfo(String url, String id, String pw){
-		this.url = url;
+	PasswordInfo(String key, String id, String pw){
+		this.key = key;
 		this.id = id;
 		this.password = pw;
 	} 
 	
 	public String toString() {
-		return "" + url + ", " + id + ", " + password;
+		return "" + key + ", " + id + ", " + password;
 	} 
 	
-	public String getUrl() { return url; } 
-	public void setName(String url) { this.url = url; }
+	public String getKey() { return key; } 
 	public String getId() { return id; }
 	public void setId(String id) { this.id = id; }
 	public String getPassword() { return password; }

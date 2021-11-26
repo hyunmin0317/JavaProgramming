@@ -3,7 +3,7 @@ package answers.assignment06_2;
 public class Main {
 	public static void main(String[] args) {
 		PasswordInfo p;
-		PasswordInfoDAO passwordInfoDao = new PasswordInfoDAOImpl();
+		DAO<PasswordInfo, String> passwordInfoDao = new PasswordInfoDAOImpl("passwords");
 		
 		System.out.println("--- inserting...");
 		p = new PasswordInfo("https://www.smu.ac.kr", "smu", "abcde");
@@ -19,16 +19,16 @@ public class Main {
 		System.out.println("--- updating...");
 		p = passwordInfoDao.findAll().get(1);
 		p.setId("smu1");
-		passwordInfoDao.update(p.getUrl(), p);
+		passwordInfoDao.update(p);
 		
 		System.out.println("--- see if updated...");
-		p = passwordInfoDao.findByUrl("https://www.smu2.ac.kr");
+		p = passwordInfoDao.findByKey("https://www.smu2.ac.kr");
 		if (p != null) {
 			System.out.println(p);
 		}
 
 		System.out.println("--- deleting...");
-		passwordInfoDao.delete("https://www.smu2.ac.kr");
+		passwordInfoDao.deleteByKey("https://www.smu2.ac.kr");
 //		passwordInfoDao.delete(p);
 		
 		System.out.println("--- finding all after deleting...");
