@@ -1,4 +1,4 @@
-package answers.assignment06;
+package answers.assignment06_2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
