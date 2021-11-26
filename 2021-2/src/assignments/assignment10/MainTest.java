@@ -10,21 +10,21 @@ public class MainTest {
 			new Person(3, "HeeDong")
 		};
 		System.out.println("\noriginal people");
-		for (var p : people) {
+		for (Person p : people) {
 			System.out.println(p);
 		}
 		
 		System.out.println("\nsort by Name");
 		NameSorter sorter = new NameSorter();
 		sorter.bubbleSort(people);
-		for (var p : people) {
+		for (Person p : people) {
 			System.out.println(p);
 		}
 		
 		System.out.println("\nsort by Age");
 		AgeSorter sorter2 = new AgeSorter();
 		sorter2.bubbleSort(people);
-		for (var p : people) {
+		for (Person p : people) {
 			System.out.println(p);
 		}
 	}
