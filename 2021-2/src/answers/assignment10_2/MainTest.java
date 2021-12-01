@@ -18,14 +18,16 @@ public class MainTest {
 		
 		BubbleSorter sorter = new BubbleSorter();
 		System.out.println("\nsort by Name");
-		NameSorter sorter1 = new NameSorter(sorter);
+//		NameSorter sorter1 = new NameSorter(sorter);
+		NameSorter sorter1 = new NameSorter();
 		sorter1.bubbleSort(people);
 		for (Person p : people) {
 			System.out.println(p);
 		}
 		
 		System.out.println("\nsort by Age");
-		AgeSorter sorter2 = new AgeSorter(sorter);
+//		AgeSorter sorter2 = new AgeSorter(sorter);
+		AgeSorter sorter2 = new AgeSorter();
 		sorter2.bubbleSort(people);
 		for (Person p : people) {
 			System.out.println(p);
