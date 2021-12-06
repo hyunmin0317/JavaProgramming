@@ -27,8 +27,7 @@ public class PersonDaoImpl implements PersonDao {
 	public void insert(Person p) {
 		try {
 			String fmt = "INSERT INTO %s VALUES(%d, '%s', '%s')";
-			String q = String.format(fmt, DB_TABLE_NAME, 
-			p.getId(), p.getName(), p.getAddress());
+			String q = String.format(fmt, DB_TABLE_NAME, p.getId(), p.getName(), p.getAddress());
 			statement.execute(q);
 		}
 		catch (SQLException e) { e.printStackTrace(); }
@@ -37,15 +36,14 @@ public class PersonDaoImpl implements PersonDao {
 	public List<Person> findAll() {
 		ArrayList<Person> persons = new ArrayList<Person>();
 		try {
-			rs = statement.executeQuery("SELECT * FROM " + 
-			DB_TABLE_NAME);
+			rs = statement.executeQuery("SELECT * FROM " + DB_TABLE_NAME);
 			while (rs.next()) {
 				persons.add(new Person(rs.getInt("id"), 
 				rs.getString("name"), rs.getString("address")));
 			}
 		} catch (SQLException e) { e.printStackTrace(); }
 		return persons;
-		}
+	}
 
 	public Person findById(int id) {
 		Person person = null;
@@ -66,8 +64,7 @@ public class PersonDaoImpl implements PersonDao {
 		if (person != null) {
 			try {
 				String fmt = "UPDATE %s SET name = '%s', address = '%s' WHERE id = %d";
-				String q = String.format(fmt, DB_TABLE_NAME, 
-				p.getName(), p.getAddress(), p.getId());
+				String q = String.format(fmt, DB_TABLE_NAME, p.getName(), p.getAddress(), p.getId());
 				statement.execute(q);
 			} catch (SQLException e) { e.printStackTrace(); }
 		}

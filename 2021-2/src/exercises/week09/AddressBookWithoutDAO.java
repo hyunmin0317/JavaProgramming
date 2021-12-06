@@ -35,8 +35,8 @@ public class AddressBookWithoutDAO {
 			"SELECT * FROM persons WHERE id < 4 ORDER BY id");
 			while (rs.next()) {
 				System.out.println("" + rs.getInt("ID") + ", "
-						+ rs.getString("name") + ", " 
-						+ rs.getString("address"));
+					+ rs.getString("name") + ", " 
+					+ rs.getString("address"));
 			}
 			System.out.println("--- updating...");
 			statement.execute("UPDATE persons SET name = 'Sooyoung Lim' WHERE id = 1");
@@ -44,20 +44,19 @@ public class AddressBookWithoutDAO {
 			
 			rs = statement.executeQuery("SELECT * FROM persons WHERE id = 1");
 			while (rs.next()) {
-			System.out.println(rs.getInt("id") + ", " 
-			+ rs.getString("name") + ", " 
-			+ rs.getString("address"));
+				System.out.println(rs.getInt("id") + ", " 
+					+ rs.getString("name") + ", " 
+					+ rs.getString("address"));
 			}
 			System.out.println("--- deleting...");
-			statement.execute(
-			"DELETE FROM persons WHERE id = 1");
+			statement.execute("DELETE FROM persons WHERE id = 1");
 			System.out.println("--- finding all after deleting...");
 			
 			rs = statement.executeQuery("SELECT * FROM persons WHERE id < 4 ORDER BY id");
 			while (rs.next()) {
 				System.out.println(rs.getInt("id") + ", " 
-				+ rs.getString("name") + ", " 
-				+ rs.getString("address"));
+					+ rs.getString("name") + ", " 
+					+ rs.getString("address"));
 			}
 		}catch (Exception e){
 			e.printStackTrace();
@@ -72,5 +71,3 @@ public class AddressBookWithoutDAO {
 		}
 	} // main
 } // class
-
-
