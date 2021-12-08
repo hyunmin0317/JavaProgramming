@@ -9,3 +9,4 @@ public class RemoteControlTest {
 		remote.buttonWasPressed(); 
 	}
 }
+
