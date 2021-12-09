@@ -65,6 +65,5 @@ public class GumballMachine {
 		return "GumballMachine [soldOutState=" + soldOutState + ", noQuarterState=" + noQuarterState
 				+ ", hasQuarterState=" + hasQuarterState + ", soldState=" + soldState + ", state=" + state + ", count="
 				+ count + "]";
-	}
-	
+	}	
 }
