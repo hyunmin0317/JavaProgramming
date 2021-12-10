@@ -4,7 +4,8 @@ public class WebSite {
 
 	public static void main(String[] args) {
 		PasswordInfo p;
-		PasswordDAO passwordDao = new PasswordDAOImpl();
+		PasswordDAO passwordDao = new PasswordDAOList();
+//		PasswordDAO passwordDao = new PasswordDAOImpl();
 		System.out.println("--- inserting...");
 
 		p = new PasswordInfo("https://www.smu.ac.kr", "smu", "abcde");
