@@ -6,8 +6,7 @@ import java.awt.event.WindowListener;
 public abstract class FrameWindow {
     JFrame frame;
 
-    FrameWindow() {
-    }
+    FrameWindow() {}
 
     public JFrame createWindow(String title, int x, int y, int width, int height) {
         frame = new JFrame(title);
