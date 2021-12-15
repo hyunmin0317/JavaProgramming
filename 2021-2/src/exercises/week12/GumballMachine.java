@@ -1,4 +1,5 @@
 package exercises.week12;
+
 public class GumballMachine {
 	State soldOutState;
 	State noQuarterState;
@@ -35,15 +36,15 @@ public class GumballMachine {
 		state.dispense();
 	}
 	
-	public void setState(State state) {
-		this.state = state;
-	}
-	
 	void releaseBall() {
 		System.out.println("A gumball comes rolling out the slot…");
 		if (count != 0) {
 			count = count - 1;
 		}
+	}
+	
+	public void setState(State state) {
+		this.state = state;
 	}
 	
 	public int getCount() { return count; } 
