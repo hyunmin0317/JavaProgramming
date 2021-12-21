@@ -1,3 +1,4 @@
+package exam.final2021;
 // 학번: 201911019, 이름: 최현민
 
 import java.util.Random;
